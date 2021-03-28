@@ -2,3 +2,4 @@ Deel Basile:
 https://randomnerdtutorials.com/esp32-deep-sleep-arduino-ide-wake-up-sources/
 https://www.instructables.com/ESP32-Deep-Sleep-Tutorial/
 https://diyi0t.com/reduce-the-esp32-power-consumption/
+https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=1D035B80FCB7AA82
