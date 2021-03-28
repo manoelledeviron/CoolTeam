@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -571,6 +571,67 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <pad name="G2" x="-2.4" y="-2.4" drill="1.28"/>
 <pad name="1" x="0" y="0" drill="1"/>
 </package>
+<package name="SOTFL50P160X60-6N">
+<description>&lt;b&gt;DRL0006A&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.838" y="0.5" dx="0.475" dy="0.3" layer="1"/>
+<smd name="2" x="-0.838" y="0" dx="0.475" dy="0.3" layer="1"/>
+<smd name="3" x="-0.838" y="-0.5" dx="0.475" dy="0.3" layer="1"/>
+<smd name="4" x="0.838" y="-0.5" dx="0.475" dy="0.3" layer="1"/>
+<smd name="5" x="0.838" y="0" dx="0.475" dy="0.3" layer="1"/>
+<smd name="6" x="0.838" y="0.5" dx="0.475" dy="0.3" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.225" y1="1" x2="1.225" y2="1" width="0.05" layer="51"/>
+<wire x1="1.225" y1="1" x2="1.225" y2="-1" width="0.05" layer="51"/>
+<wire x1="1.225" y1="-1" x2="-1.225" y2="-1" width="0.05" layer="51"/>
+<wire x1="-1.225" y1="-1" x2="-1.225" y2="1" width="0.05" layer="51"/>
+<wire x1="-0.6" y1="0.8" x2="0.6" y2="0.8" width="0.1" layer="51"/>
+<wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="0.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="-0.8" x2="-0.6" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="0.3" x2="-0.1" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.25" y1="0.8" x2="0.25" y2="0.8" width="0.2" layer="21"/>
+<wire x1="0.25" y1="0.8" x2="0.25" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="0.25" y1="-0.8" x2="-0.25" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-0.25" y1="-0.8" x2="-0.25" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-1.075" y1="0.9" x2="-0.6" y2="0.9" width="0.2" layer="21"/>
+</package>
+<package name="0603" urn="urn:adsk.eagle:footprint:39615/1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="SDR1307120ML">
+<description>&lt;b&gt;SDR1307-120ML-2&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="0" y="4.625" dx="14" dy="4.75" layer="1"/>
+<smd name="2" x="0" y="-4.625" dx="14" dy="4.75" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.1" layer="51"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.1" layer="51"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.1" layer="51"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.1" layer="51"/>
+<wire x1="-6.5" y1="0" x2="-6.5" y2="0" width="0.2" layer="51"/>
+<wire x1="-6.5" y1="0" x2="6.5" y2="0" width="0.2" layer="51" curve="-180"/>
+<wire x1="6.5" y1="0" x2="6.5" y2="0" width="0.2" layer="51"/>
+<wire x1="6.5" y1="0" x2="-6.5" y2="0" width="0.2" layer="51" curve="-180"/>
+<wire x1="-6.5" y1="0.3" x2="-6.5" y2="-0.3" width="0.1" layer="21"/>
+<wire x1="6.5" y1="0.3" x2="6.5" y2="-0.3" width="0.1" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="M0805" urn="urn:adsk.eagle:package:23556/1" type="box">
@@ -828,6 +889,30 @@ http://www.bccomponents.com/</description>
 <pin name="1" x="2.54" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="2" x="2.54" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="TPS563207DRLR">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VIN" x="0" y="0" length="middle"/>
+<pin name="SW" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" length="middle"/>
+<pin name="BST" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="EN" x="0" y="-2.54" length="middle"/>
+<pin name="FB" x="25.4" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SDR1307-3R3ML">
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ESP32-WROOM-32E_M113EH3200PH3Q" prefix="IC">
@@ -956,7 +1041,7 @@ Source: &lt;a href="https://www.silabs.com/documents/public/data-sheets/CP2101.p
 </device>
 </devices>
 </deviceset>
-<deviceset name="R-EU_" prefix="R" uservalue="yes">
+<deviceset name="R-EU_0805" prefix="R" uservalue="yes">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="R-EU-1" x="0" y="0"/>
@@ -975,35 +1060,6 @@ Source: &lt;a href="https://www.silabs.com/documents/public/data-sheets/CP2101.p
 </technologies>
 </device>
 </devices>
-</deviceset>
-<deviceset name="C-EU" prefix="C" uservalue="yes">
-<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
-<gates>
-<gate name="G$1" symbol="C-EU" x="0" y="0"/>
-</gates>
-<devices>
-<device name="C0805" package="C0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23617/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="88" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
 </deviceset>
 <deviceset name="CPOL-EU" prefix="C" uservalue="yes">
 <description>&lt;B&gt;POLARIZED CAPACITOR&lt;/B&gt;, European symbol</description>
@@ -1034,7 +1090,7 @@ Source: &lt;a href="https://www.silabs.com/documents/public/data-sheets/CP2101.p
 </pinmapping>
 </spice>
 </deviceset>
-<deviceset name="10104110-0001LF" prefix="J">
+<deviceset name="USB2_MICRO_CON" prefix="J">
 <description>&lt;b&gt;Amphenol FCI B 2.0 Micro USB Connector Receptacle, Right Angle&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/10104110-0001LF.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1193,6 +1249,132 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 </device>
 </devices>
 </deviceset>
+<deviceset name="C-EU-0805" prefix="C" uservalue="yes">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="C0805" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23617/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="88" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+<deviceset name="TPS563207DRLR" prefix="IC">
+<description>&lt;b&gt;4.3-V TO 17-V INPUT, 3-A SYNCHRO&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.ti.com/lit/ds/symlink/tps563207.pdf?ts=1604418509242&amp;ref_url=https%3A%2F%2Fwww.ti.com%2Fstore%2Fti%2Fen%2Fp%2Fproduct%2F%3Fp%3DTPS563207DRLR"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS563207DRLR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOTFL50P160X60-6N">
+<connects>
+<connect gate="G$1" pin="BST" pad="4"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SW" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="4.3-V TO 17-V INPUT, 3-A SYNCHRO" constant="no"/>
+<attribute name="HEIGHT" value="0.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TPS563207DRLR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-TPS563207DRLR" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS563207DRLR?qs=zW32dvEIR3sGbPuBspfmjQ%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-EU-0603" prefix="C" uservalue="yes">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="C0805" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="88" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+<deviceset name="SDR1307-3R3ML" prefix="L">
+<description>&lt;b&gt;Fixed Inductors 3.3uH 20% SMD 1307&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/SDR1307.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SDR1307-3R3ML" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SDR1307120ML">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Fixed Inductors 3.3uH 20% SMD 1307" constant="no"/>
+<attribute name="HEIGHT" value="7.3mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SDR1307-3R3ML" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="652-SDR1307-3R3ML" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Bourns/SDR1307-3R3ML?qs=%2FPiZ59IM4y2YYz3sbqFwKw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-EU_0603" prefix="R" uservalue="yes">
+<description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="R-EU-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M0805" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
@@ -1344,25 +1526,25 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R1" library="--CoolTeamLib" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
-<part name="C1" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0,1µF"/>
-<part name="C2" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0,1µF"/>
+<part name="R1" library="--CoolTeamLib" deviceset="R-EU_0805" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
+<part name="C1" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0,1µF"/>
+<part name="C2" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0,1µF"/>
 <part name="C3" library="--CoolTeamLib" deviceset="CPOL-EU" device="153CLV-0605" package3d_urn="urn:adsk.eagle:package:23398/2" value="22µF"/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C4" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0,1µF"/>
+<part name="C4" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0,1µF"/>
 <part name="C5" library="--CoolTeamLib" deviceset="CPOL-EU" device="153CLV-0605" package3d_urn="urn:adsk.eagle:package:23398/2" value="4,7µF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="--CoolTeamLib" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="22k1Û 5%"/>
-<part name="R3" library="--CoolTeamLib" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="47k5Û 5%"/>
-<part name="R4" library="--CoolTeamLib" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="2kÛ 5%"/>
-<part name="R5" library="--CoolTeamLib" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10kÛ 5%"/>
+<part name="R2" library="--CoolTeamLib" deviceset="R-EU_0805" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="22k1Û 5%"/>
+<part name="R3" library="--CoolTeamLib" deviceset="R-EU_0805" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="47k5Û 5%"/>
+<part name="R4" library="--CoolTeamLib" deviceset="R-EU_0805" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="2kÛ 5%"/>
+<part name="R5" library="--CoolTeamLib" deviceset="R-EU_0805" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10kÛ 5%"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="J1" library="--CoolTeamLib" deviceset="10104110-0001LF" device=""/>
+<part name="J1" library="--CoolTeamLib" deviceset="USB2_MICRO_CON" device=""/>
 <part name="D1" library="--CoolTeamLib" deviceset="SMF5V0TFTR" device=""/>
 <part name="D2" library="--CoolTeamLib" deviceset="SMF5V0TFTR" device=""/>
 <part name="D3" library="--CoolTeamLib" deviceset="SMF5V0TFTR" device=""/>
@@ -1374,13 +1556,26 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <part name="U1" library="--CoolTeamLib" deviceset="RN2483" device="" value="RN2483"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U2" library="--TPS22860DBVR" deviceset="TPS22860DBVR" device=""/>
-<part name="C6" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
-<part name="C7" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1µF"/>
+<part name="C6" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="C7" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1µF"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J2" library="--CoolTeamLib" deviceset="SMA_CONNECTOR" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
+<part name="CIN" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10µF"/>
+<part name="CINX" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="IC3" library="--CoolTeamLib" deviceset="TPS563207DRLR" device=""/>
+<part name="CBOOT" library="--CoolTeamLib" deviceset="C-EU-0603" device="C0805" value="100nF"/>
+<part name="L1" library="--CoolTeamLib" deviceset="SDR1307-3R3ML" device="" value="3,3µH"/>
+<part name="CFF" library="--CoolTeamLib" deviceset="C-EU-0603" device="C0805" value="39pF"/>
+<part name="R6" library="--CoolTeamLib" deviceset="R-EU_0603" device="M0805" value="30k9Û"/>
+<part name="R7" library="--CoolTeamLib" deviceset="R-EU_0603" device="M0805" value="10kÛ"/>
+<part name="COUT" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22µF"/>
+<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2013,12 +2208,169 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <sheet>
 <description>Power</description>
 <plain>
+<text x="223.52" y="88.9" size="1.778" layer="91">quantity 2??????</text>
 </plain>
 <instances>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME3" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+<instance part="CIN" gate="G$1" x="63.5" y="106.68" smashed="yes">
+<attribute name="NAME" x="64.262" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.262" y="102.235" size="1.778" layer="96"/>
+</instance>
+<instance part="CINX" gate="G$1" x="78.74" y="106.68" smashed="yes">
+<attribute name="NAME" x="80.264" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.264" y="101.981" size="1.778" layer="96"/>
+</instance>
+<instance part="IC3" gate="G$1" x="96.52" y="116.84" smashed="yes">
+<attribute name="NAME" x="102.87" y="124.46" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="100.33" y="121.92" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="CBOOT" gate="G$1" x="134.62" y="124.46" smashed="yes">
+<attribute name="NAME" x="136.144" y="124.841" size="1.778" layer="95"/>
+<attribute name="VALUE" x="136.144" y="119.761" size="1.778" layer="96"/>
+</instance>
+<instance part="L1" gate="G$1" x="142.24" y="114.3" smashed="yes">
+<attribute name="NAME" x="150.876" y="117.348" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="149.352" y="112.776" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="CFF" gate="G$1" x="177.8" y="104.14" smashed="yes">
+<attribute name="NAME" x="179.324" y="104.521" size="1.778" layer="95"/>
+<attribute name="VALUE" x="179.324" y="99.441" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="198.12" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="202.4634" y="109.474" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="206.502" y="100.584" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R7" gate="G$1" x="198.12" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="202.2094" y="91.186" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="204.978" y="83.058" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="COUT" gate="G$1" x="213.36" y="96.52" smashed="yes">
+<attribute name="NAME" x="214.884" y="96.901" size="1.778" layer="95"/>
+<attribute name="VALUE" x="214.884" y="91.821" size="1.778" layer="96"/>
+</instance>
+<instance part="GND15" gate="1" x="63.5" y="86.36" smashed="yes">
+<attribute name="VALUE" x="60.96" y="83.82" size="1.778" layer="96"/>
+</instance>
+<instance part="GND16" gate="1" x="93.98" y="104.14" smashed="yes">
+<attribute name="VALUE" x="91.44" y="101.6" size="1.778" layer="96"/>
+</instance>
+<instance part="GND17" gate="1" x="198.12" y="63.5" smashed="yes">
+<attribute name="VALUE" x="195.58" y="60.96" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="BAT_IN" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VIN"/>
+<pinref part="CIN" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="116.84" x2="78.74" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="116.84" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="CINX" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="109.22" x2="78.74" y2="116.84" width="0.1524" layer="91"/>
+<junction x="78.74" y="116.84"/>
+<wire x1="63.5" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
+<junction x="63.5" y="116.84"/>
+<pinref part="IC3" gate="G$1" pin="EN"/>
+<wire x1="96.52" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="114.3" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
+<junction x="93.98" y="116.84"/>
+<label x="45.72" y="116.84" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="CIN" gate="G$1" pin="2"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="63.5" y1="101.6" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="CINX" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="93.98" x2="63.5" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="101.6" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<junction x="63.5" y="93.98"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="81.28" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="COUT" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="73.66" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="91.44" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<junction x="198.12" y="73.66"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="96.52" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="111.76" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="BST"/>
+<wire x1="121.92" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="116.84" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="CBOOT" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="132.08" x2="134.62" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="SW"/>
+<wire x1="121.92" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="CBOOT" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="119.38" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<junction x="134.62" y="114.3"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="FB"/>
+<wire x1="121.92" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="111.76" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="CFF" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="93.98" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="93.98" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<junction x="177.8" y="93.98"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="99.06" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<junction x="198.12" y="93.98"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="114.3" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="CFF" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="106.68" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<junction x="177.8" y="114.3"/>
+<pinref part="COUT" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="114.3" x2="213.36" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="114.3" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
+<junction x="198.12" y="114.3"/>
+<wire x1="213.36" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<junction x="213.36" y="114.3"/>
+<label x="220.98" y="114.3" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
