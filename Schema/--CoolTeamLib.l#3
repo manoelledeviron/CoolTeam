@@ -525,6 +525,88 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <smd name="5" x="1.255" y="0" dx="1.21" dy="0.58" layer="1" roundness="25"/>
 <smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
 </package>
+<package name="LPRS_SMA_CONNECTOR">
+<wire x1="-3.2" y1="3.2" x2="3.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="-3.2" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-3.2" x2="-3.2" y2="-3.2" width="0.127" layer="51"/>
+<wire x1="-3.2" y1="-3.2" x2="-3.2" y2="3.2" width="0.127" layer="51"/>
+<text x="-3.5" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-4" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-3.61" y1="3.61" x2="3.61" y2="3.61" width="0.05" layer="39"/>
+<wire x1="3.61" y1="3.61" x2="3.61" y2="-3.61" width="0.05" layer="39"/>
+<wire x1="3.61" y1="-3.61" x2="-3.61" y2="-3.61" width="0.05" layer="39"/>
+<wire x1="-3.61" y1="-3.61" x2="-3.61" y2="3.61" width="0.05" layer="39"/>
+<wire x1="-1" y1="3.2" x2="1" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-1" x2="-3.2" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="-3.2" x2="-1" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="3.2" y1="1" x2="3.2" y2="-1" width="0.127" layer="21"/>
+<pad name="G1" x="-2.4" y="2.4" drill="1.28"/>
+<pad name="G4" x="2.4" y="2.4" drill="1.28"/>
+<pad name="G3" x="2.4" y="-2.4" drill="1.28"/>
+<pad name="G2" x="-2.4" y="-2.4" drill="1.28"/>
+<pad name="1" x="0" y="0" drill="1"/>
+</package>
+<package name="0603" urn="urn:adsk.eagle:footprint:39615/1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="SOTFL50P160X60-6N">
+<description>&lt;b&gt;DRL0006A&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.838" y="0.5" dx="0.475" dy="0.3" layer="1"/>
+<smd name="2" x="-0.838" y="0" dx="0.475" dy="0.3" layer="1"/>
+<smd name="3" x="-0.838" y="-0.5" dx="0.475" dy="0.3" layer="1"/>
+<smd name="4" x="0.838" y="-0.5" dx="0.475" dy="0.3" layer="1"/>
+<smd name="5" x="0.838" y="0" dx="0.475" dy="0.3" layer="1"/>
+<smd name="6" x="0.838" y="0.5" dx="0.475" dy="0.3" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.225" y1="1" x2="1.225" y2="1" width="0.05" layer="51"/>
+<wire x1="1.225" y1="1" x2="1.225" y2="-1" width="0.05" layer="51"/>
+<wire x1="1.225" y1="-1" x2="-1.225" y2="-1" width="0.05" layer="51"/>
+<wire x1="-1.225" y1="-1" x2="-1.225" y2="1" width="0.05" layer="51"/>
+<wire x1="-0.6" y1="0.8" x2="0.6" y2="0.8" width="0.1" layer="51"/>
+<wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="0.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="-0.8" x2="-0.6" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="0.3" x2="-0.1" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.25" y1="0.8" x2="0.25" y2="0.8" width="0.2" layer="21"/>
+<wire x1="0.25" y1="0.8" x2="0.25" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="0.25" y1="-0.8" x2="-0.25" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-0.25" y1="-0.8" x2="-0.25" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-1.075" y1="0.9" x2="-0.6" y2="0.9" width="0.2" layer="21"/>
+</package>
+<package name="SDR1307120ML">
+<description>&lt;b&gt;SDR1307-120ML-2&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="0" y="4.625" dx="14" dy="4.75" layer="1"/>
+<smd name="2" x="0" y="-4.625" dx="14" dy="4.75" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.1" layer="51"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.1" layer="51"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.1" layer="51"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.1" layer="51"/>
+<wire x1="-6.5" y1="0" x2="-6.5" y2="0" width="0.2" layer="51"/>
+<wire x1="-6.5" y1="0" x2="6.5" y2="0" width="0.2" layer="51" curve="-180"/>
+<wire x1="6.5" y1="0" x2="6.5" y2="0" width="0.2" layer="51"/>
+<wire x1="6.5" y1="0" x2="-6.5" y2="0" width="0.2" layer="51" curve="-180"/>
+<wire x1="-6.5" y1="0.3" x2="-6.5" y2="-0.3" width="0.1" layer="21"/>
+<wire x1="6.5" y1="0.3" x2="6.5" y2="-0.3" width="0.1" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="M0805" urn="urn:adsk.eagle:package:23556/1" type="box">
@@ -777,6 +859,48 @@ http://www.bccomponents.com/</description>
 <pin name="VOUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="GND" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="SMA_CONNECTOR">
+<circle x="0" y="0" radius="1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-3.302" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.254" width="0.254" layer="94"/>
+<text x="-3.81" y="1.524" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.064" y="-6.858" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-3.302" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.302" x2="-1.27" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="-0.508" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.302" x2="0.254" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-0.635" x2="-3.175" y2="0.635" width="0.254" layer="94" curve="180"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="-1.905" width="0.254" layer="94" curve="180"/>
+<pin name="1" x="2.54" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="TPS563207DRLR">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VIN" x="0" y="0" length="middle"/>
+<pin name="SW" x="0" y="-2.54" length="middle"/>
+<pin name="GND" x="0" y="-5.08" length="middle"/>
+<pin name="BST" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="EN" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="FB" x="25.4" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SDR1307-3R3ML">
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ESP32-WROOM-32E_M113EH3200PH3Q" prefix="IC">
@@ -905,7 +1029,7 @@ Source: &lt;a href="https://www.silabs.com/documents/public/data-sheets/CP2101.p
 </device>
 </devices>
 </deviceset>
-<deviceset name="R-EU_" prefix="R" uservalue="yes">
+<deviceset name="R-EU_0805" prefix="R" uservalue="yes">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="R-EU-1" x="0" y="0"/>
@@ -925,7 +1049,7 @@ Source: &lt;a href="https://www.silabs.com/documents/public/data-sheets/CP2101.p
 </device>
 </devices>
 </deviceset>
-<deviceset name="C-EU" prefix="C" uservalue="yes">
+<deviceset name="C-EU-0805" prefix="C" uservalue="yes">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
@@ -1140,6 +1264,128 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <attribute name="PACKAGE" value="SOT-23-6 Texas Instruments"/>
 <attribute name="PRICE" value="None"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/TPS22860DBVR/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMA_CONNECTOR" prefix="J">
+<description>Straight SMA Connector  &lt;a href="https://pricing.snapeda.com/parts/SMA%20CONNECTOR/LPRS/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMA_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LPRS_SMA_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="G1 G2 G3 G4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Warning"/>
+<attribute name="DESCRIPTION" value=" RF Connectors / Coaxial Connectors SMA Coaxial Right angled "/>
+<attribute name="MF" value="LPRS"/>
+<attribute name="MP" value="SMA CONNECTOR"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/SMA CONNECTOR/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS563207DRLR" prefix="IC">
+<description>&lt;b&gt;4.3-V TO 17-V INPUT, 3-A SYNCHRO&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.ti.com/lit/ds/symlink/tps563207.pdf?ts=1604418509242&amp;ref_url=https%3A%2F%2Fwww.ti.com%2Fstore%2Fti%2Fen%2Fp%2Fproduct%2F%3Fp%3DTPS563207DRLR"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS563207DRLR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOTFL50P160X60-6N">
+<connects>
+<connect gate="G$1" pin="BST" pad="4"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SW" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="4.3-V TO 17-V INPUT, 3-A SYNCHRO" constant="no"/>
+<attribute name="HEIGHT" value="0.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TPS563207DRLR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-TPS563207DRLR" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS563207DRLR?qs=zW32dvEIR3sGbPuBspfmjQ%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-EU_0603" prefix="R" uservalue="yes">
+<description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="R-EU-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M0805" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-EU-0603" prefix="C" uservalue="yes">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="C0805" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="88" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+<deviceset name="SDR1307-3R3ML" prefix="L">
+<description>&lt;b&gt;Fixed Inductors 3.3uH 20% SMD 1307&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/SDR1307.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SDR1307-3R3ML" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SDR1307120ML">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Fixed Inductors 3.3uH 20% SMD 1307" constant="no"/>
+<attribute name="HEIGHT" value="7.3mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SDR1307-3R3ML" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="652-SDR1307-3R3ML" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Bourns/SDR1307-3R3ML?qs=%2FPiZ59IM4y2YYz3sbqFwKw%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
