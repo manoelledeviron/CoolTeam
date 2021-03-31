@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -437,27 +437,6 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <text x="2.54" y="22.86" size="1.27" layer="25">&gt;Name</text>
 <text x="2.54" y="21.59" size="1.27" layer="27">&gt;Value</text>
 </package>
-<package name="LPRS_SMA_CONNECTOR">
-<wire x1="-3.2" y1="3.2" x2="3.2" y2="3.2" width="0.127" layer="51"/>
-<wire x1="3.2" y1="3.2" x2="3.2" y2="-3.2" width="0.127" layer="51"/>
-<wire x1="3.2" y1="-3.2" x2="-3.2" y2="-3.2" width="0.127" layer="51"/>
-<wire x1="-3.2" y1="-3.2" x2="-3.2" y2="3.2" width="0.127" layer="51"/>
-<text x="-3.5" y="4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-4" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<wire x1="-3.61" y1="3.61" x2="3.61" y2="3.61" width="0.05" layer="39"/>
-<wire x1="3.61" y1="3.61" x2="3.61" y2="-3.61" width="0.05" layer="39"/>
-<wire x1="3.61" y1="-3.61" x2="-3.61" y2="-3.61" width="0.05" layer="39"/>
-<wire x1="-3.61" y1="-3.61" x2="-3.61" y2="3.61" width="0.05" layer="39"/>
-<wire x1="-1" y1="3.2" x2="1" y2="3.2" width="0.127" layer="21"/>
-<wire x1="-3.2" y1="-1" x2="-3.2" y2="1" width="0.127" layer="21"/>
-<wire x1="1" y1="-3.2" x2="-1" y2="-3.2" width="0.127" layer="21"/>
-<wire x1="3.2" y1="1" x2="3.2" y2="-1" width="0.127" layer="21"/>
-<pad name="G1" x="-2.4" y="2.4" drill="1.28"/>
-<pad name="G4" x="2.4" y="2.4" drill="1.28"/>
-<pad name="G3" x="2.4" y="-2.4" drill="1.28"/>
-<pad name="G2" x="-2.4" y="-2.4" drill="1.28"/>
-<pad name="1" x="0" y="0" drill="1"/>
-</package>
 <package name="SOT-89">
 <description>SOT98 Emitter Collector Basis</description>
 <wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
@@ -500,6 +479,55 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <smd name="3" x="1.524" y="-1.905" dx="0.8" dy="1.4" layer="1"/>
 <smd name="2" x="0" y="-1.651" dx="0.8" dy="1.9" layer="1" stop="no" cream="no"/>
 <smd name="4" x="0" y="0.94" dx="2.032" dy="3.65" layer="1" roundness="75"/>
+</package>
+<package name="CON-U.FL">
+<description>Hirose's &lt;b&gt;U.FL series&lt;/b&gt; Ultra Small Surface Mount Coaxial Connectors - Low Profile 1.9mm or 2.4mm Mated Height&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;Features:&lt;/b&gt;
+&lt;ol&gt;
+	&lt;b&gt;&lt;li&gt; Extremely Small Occupied Mounting Area&lt;/b&gt;
+	Reduced board space requirement by 18% to 7.7mm2, when
+	compared with Hirose's E.FL connectors.
+	&lt;b&gt;&lt;li&gt; Light Weight&lt;/b&gt;
+	One of the world?s lightest coaxial connectors.
+	Receptacle: 15.7mg
+	&lt;b&gt;&lt;li&gt; Frequencies of Up to 6GHz&lt;/b&gt;
+	To meet the frequency requirements of a wide variety of
+	miniature equipment, these connectors offer high frequency
+	performance from DC to 6 GHz.
+	&lt;b&gt;&lt;li&gt; Board Placement with Automatic Equipment&lt;/b&gt;
+	Supplied on tape-and-reel packaging.
+	&lt;b&gt;&lt;li&gt; Use of Ultra-fine Teflon Cable&lt;/b&gt;
+	Several of ultra-fine single and double shielded Teflon®
+	coaxial cables terminate to U.FL plug.
+	&lt;b&gt;&lt;li&gt; Simple Disconnection&lt;/b&gt;
+	Dedicated tool allows reliable un-mating of the plug.
+	&lt;b&gt;&lt;li&gt; User Friendly Mating Operation&lt;/b&gt;
+	Tactile lock feeling ensures and confirms reliable connection.
+&lt;/ol&gt;
+
+&lt;b&gt;Applications:&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Mobile phones, Wireless LAN, Mini-PCI, Bluetooth, PDA, GPS,&lt;br&gt;
+electronic measuring instruments, etc.&lt;br&gt;
+&lt;br&gt;
+Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;messi@users.sourceforge.net&lt;/a&gt;&lt;br&gt;</description>
+<wire x1="0.9395" y1="1.3" x2="1.3" y2="0.9395" width="0.127" layer="51" curve="-90"/>
+<wire x1="1.3" y1="0.9395" x2="1.3" y2="-0.9395" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-0.9395" x2="0.9395" y2="-1.3" width="0.127" layer="51" curve="-90"/>
+<wire x1="0.9395" y1="-1.3" x2="-0.9395" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-0.9395" y1="-1.3" x2="-1.3" y2="-0.9395" width="0.127" layer="51" curve="-90"/>
+<wire x1="-1.3" y1="-0.9395" x2="-1.3" y2="0.9395" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="0.9395" x2="-0.9395" y2="1.3" width="0.127" layer="51" curve="-90"/>
+<wire x1="-0.9395" y1="1.3" x2="0.9395" y2="1.3" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.2" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.9" width="0.127" layer="51"/>
+<smd name="GND@0" x="-1.5" y="0" dx="1" dy="2.2" layer="1"/>
+<smd name="GND@1" x="1.5" y="0" dx="1" dy="2.2" layer="1"/>
+<smd name="S" x="0" y="-1.55" dx="1" dy="1.1" layer="1"/>
+<text x="-2.5" y="-0.8" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.4" y="-0.8" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -645,24 +673,6 @@ http://www.bccomponents.com/</description>
 <pin name="GPIO12" x="-22.86" y="12.7" length="middle"/>
 <pin name="GPIO13" x="-22.86" y="15.24" length="middle"/>
 </symbol>
-<symbol name="SMA_CONNECTOR">
-<circle x="0" y="0" radius="1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="0" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-3.302" width="0.254" layer="94"/>
-<circle x="0" y="-2.54" radius="0.254" width="0.254" layer="94"/>
-<text x="-3.81" y="1.524" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.064" y="-6.858" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="-3.302" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-3.302" x2="-1.27" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.302" x2="-0.508" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-3.302" x2="0.254" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="-0.635" x2="-3.175" y2="0.635" width="0.254" layer="94" curve="180"/>
-<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="-1.905" width="0.254" layer="94" curve="180"/>
-<pin name="1" x="2.54" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="2.54" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="SOT-89">
 <wire x1="0" y1="0" x2="0" y2="20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
@@ -672,6 +682,18 @@ http://www.bccomponents.com/</description>
 <pin name="V_IN" x="-5.08" y="15.24" length="middle"/>
 <pin name="VOUT2" x="25.4" y="10.16" length="middle" rot="R180"/>
 <pin name="VOUT1" x="-5.08" y="10.16" length="middle"/>
+</symbol>
+<symbol name="MA-02-1">
+<wire x1="-3.81" y1="5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -848,31 +870,6 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMA_CONNECTOR" prefix="J">
-<description>Straight SMA Connector  &lt;a href="https://pricing.snapeda.com/parts/SMA%20CONNECTOR/LPRS/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMA_CONNECTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LPRS_SMA_CONNECTOR">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="G1 G2 G3 G4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Warning"/>
-<attribute name="DESCRIPTION" value=" RF Connectors / Coaxial Connectors SMA Coaxial Right angled "/>
-<attribute name="MF" value="LPRS"/>
-<attribute name="MP" value="SMA CONNECTOR"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/SMA CONNECTOR/?ref=eda"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="C-EU-0805" prefix="C" uservalue="yes">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
@@ -913,6 +910,33 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <connect gate="G$1" pin="VOUT2" pad="4"/>
 <connect gate="G$1" pin="VSS" pad="3"/>
 <connect gate="G$1" pin="V_IN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON-HIROSE-COAXIAL" prefix="J">
+<description>Hirose SMT 50 ohm impedance connector&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;W.FL&lt;/b&gt; ............................. 1.4mm mated height, ultra small SMT connectors .................................. DC to 3GHz&lt;br&gt;
+&lt;b&gt;U.FL&lt;/b&gt; .............................. 1.9mm or 2.4mm mated height, ultra small SMT connectors ................... DC to 6GHz&lt;br&gt;
+&lt;b&gt;E.FL&lt;/b&gt; ............................... 3.2mm mated height, ultra small SMT connectors .................................. DC to 2GHz&lt;br&gt;
+&lt;b&gt;H.FL&lt;/b&gt; .............................. 3.0mm mated height, ultra small SMT connectors ................................... DC to 3GHz&lt;br&gt;
+&lt;b&gt;S.FL&lt;/b&gt;. ............................. 6.0mm mated height, SMT connectors ................................................... DC to 2.5GHz&lt;br&gt;
+&lt;b&gt;FL&lt;/b&gt; ................................. 10.5mm mated height, SMT connectors .................................................. DC to 1.5GHz&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;messi@users.sourceforge.net&lt;/a&gt;&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="MA-02-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-U.FL" package="CON-U.FL">
+<connects>
+<connect gate="G$1" pin="1" pad="S"/>
+<connect gate="G$1" pin="2" pad="GND@0"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1084,13 +1108,13 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J2" library="--CoolTeamLib" deviceset="SMA_CONNECTOR" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="U$1" library="--CoolTeamLib" deviceset="SOT-89-5" device=""/>
 <part name="C4" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="C5" library="--CoolTeamLib" deviceset="C-EU-0805" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="J1" library="--CoolTeamLib" deviceset="CON-HIROSE-COAXIAL" device="-U.FL"/>
 </parts>
 <sheets>
 <sheet>
@@ -1306,12 +1330,12 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <instance part="GND13" gate="1" x="167.64" y="78.74" smashed="yes">
 <attribute name="VALUE" x="165.1" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="160.02" y="149.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="161.544" y="153.67" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="150.876" y="155.702" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="165.1" y="147.32" smashed="yes">
+<attribute name="VALUE" x="162.56" y="144.78" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="157.48" y="144.78" smashed="yes">
-<attribute name="VALUE" x="154.94" y="142.24" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="172.72" y="154.94" smashed="yes">
+<attribute name="VALUE" x="168.91" y="147.32" size="1.778" layer="96"/>
+<attribute name="NAME" x="168.91" y="160.782" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -1338,8 +1362,9 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <junction x="167.64" y="83.82"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="149.86" x2="165.1" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -1405,9 +1430,10 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RFH"/>
-<wire x1="144.78" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="142.24" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="142.24" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="142.24" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

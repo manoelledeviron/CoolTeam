@@ -58,8 +58,15 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -72,6 +79,107 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="Stiffner" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tBridges" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="tBPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="bBPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="MPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="13" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="yes" active="yes"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="yes" active="yes"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -385,6 +493,84 @@ http://www.bccomponents.com/</description>
 <wire x1="-1.7" y1="0.65" x2="0.85" y2="0.65" width="0.2" layer="21"/>
 <wire x1="-0.85" y1="-0.65" x2="0.85" y2="-0.65" width="0.2" layer="21"/>
 </package>
+<package name="RN2483">
+<description>Full package
+
+Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c100e20856abe563dfe8824e9cc4bd/lib/Octanis1.lbr</description>
+<wire x1="0" y1="26.67" x2="17.8" y2="26.67" width="0.127" layer="21"/>
+<wire x1="17.8" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="GND" x="17.78" y="1.27" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="UART_TX" x="17.78" y="7.62" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="UART_RX" x="17.78" y="8.89" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="GND1" x="17.78" y="10.16" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="GND2" x="17.78" y="13.97" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="VDD" x="17.78" y="15.24" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="GND3" x="17.78" y="25.4" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="GND4" x="12.7" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="GND5" x="11.43" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="RFH" x="10.16" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="GND6" x="8.89" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="RFL" x="7.62" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="GND7" x="6.35" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="GND8" x="5.08" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
+<smd name="GND9" x="0" y="25.4" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="RESET°" x="0" y="20.32" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GND10" x="0" y="19.05" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="VDD2" x="0" y="17.78" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GND11" x="0" y="8.89" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GND12" x="0" y="1.27" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="UART_RTS" x="17.78" y="2.54" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="UART_CTS" x="17.78" y="3.81" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO13" x="17.78" y="11.43" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO12" x="17.78" y="12.7" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO11" x="17.78" y="16.51" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO10" x="17.78" y="17.78" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO0" x="0" y="16.51" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO1" x="0" y="15.24" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO2" x="0" y="13.97" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO3" x="0" y="12.7" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO4" x="0" y="11.43" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO5" x="0" y="10.16" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO6" x="0" y="6.35" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO7" x="0" y="5.08" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO8" x="0" y="3.81" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GPIO9" x="0" y="2.54" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$1" x="0" y="21.59" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$2" x="0" y="22.86" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$3" x="0" y="24.13" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$4" x="17.78" y="24.13" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$5" x="17.78" y="22.86" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$6" x="17.78" y="21.59" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$7" x="17.78" y="20.32" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$8" x="17.78" y="19.05" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$9" x="17.78" y="6.35" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$10" x="17.78" y="5.08" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="P$11" x="0" y="7.62" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<rectangle x1="3.81" y1="2.54" x2="13.97" y2="15" layer="51"/>
+<text x="2.54" y="22.86" size="1.27" layer="25">&gt;Name</text>
+<text x="2.54" y="21.59" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="LPRS_SMA_CONNECTOR">
+<wire x1="-3.2" y1="3.2" x2="3.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="-3.2" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-3.2" x2="-3.2" y2="-3.2" width="0.127" layer="51"/>
+<wire x1="-3.2" y1="-3.2" x2="-3.2" y2="3.2" width="0.127" layer="51"/>
+<text x="-3.5" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-4" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-3.61" y1="3.61" x2="3.61" y2="3.61" width="0.05" layer="39"/>
+<wire x1="3.61" y1="3.61" x2="3.61" y2="-3.61" width="0.05" layer="39"/>
+<wire x1="3.61" y1="-3.61" x2="-3.61" y2="-3.61" width="0.05" layer="39"/>
+<wire x1="-3.61" y1="-3.61" x2="-3.61" y2="3.61" width="0.05" layer="39"/>
+<wire x1="-1" y1="3.2" x2="1" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-1" x2="-3.2" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="-3.2" x2="-1" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="3.2" y1="1" x2="3.2" y2="-1" width="0.127" layer="21"/>
+<pad name="G1" x="-2.4" y="2.4" drill="1.28"/>
+<pad name="G4" x="2.4" y="2.4" drill="1.28"/>
+<pad name="G3" x="2.4" y="-2.4" drill="1.28"/>
+<pad name="G2" x="-2.4" y="-2.4" drill="1.28"/>
+<pad name="1" x="0" y="0" drill="1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="M0805" urn="urn:adsk.eagle:package:23556/1" type="box">
@@ -591,6 +777,56 @@ http://www.bccomponents.com/</description>
 <vertex x="9.144" y="2.032"/>
 <vertex x="9.144" y="-2.032"/>
 </polygon>
+</symbol>
+<symbol name="RN2483">
+<description>Low-Power Long Range LoRaTM Technology Transceiver Module</description>
+<wire x1="-17.78" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-20.32" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
+<pin name="GND" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="UART_TX" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="UART_RX" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="RFH" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="RFL" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="RESET°" x="22.86" y="0" length="middle" rot="R180"/>
+<text x="-5.08" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="UART_CTS" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="UART_RTS" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO0" x="-22.86" y="-17.78" length="middle"/>
+<pin name="GPIO1" x="-22.86" y="-15.24" length="middle"/>
+<pin name="GPIO2" x="-22.86" y="-12.7" length="middle"/>
+<pin name="GPIO3" x="-22.86" y="-10.16" length="middle"/>
+<pin name="GPIO4" x="-22.86" y="-7.62" length="middle"/>
+<pin name="GPIO5" x="-22.86" y="-5.08" length="middle"/>
+<pin name="GPIO6" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO7" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO8" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO9" x="-22.86" y="5.08" length="middle"/>
+<pin name="GPIO10" x="-22.86" y="7.62" length="middle"/>
+<pin name="GPIO11" x="-22.86" y="10.16" length="middle"/>
+<pin name="GPIO12" x="-22.86" y="12.7" length="middle"/>
+<pin name="GPIO13" x="-22.86" y="15.24" length="middle"/>
+</symbol>
+<symbol name="SMA_CONNECTOR">
+<circle x="0" y="0" radius="1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-3.302" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.254" width="0.254" layer="94"/>
+<text x="-3.81" y="1.524" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.064" y="-6.858" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-3.302" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.302" x2="-1.27" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.302" x2="-0.508" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.302" x2="0.254" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-0.635" x2="-3.175" y2="0.635" width="0.254" layer="94" curve="180"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="-1.905" width="0.254" layer="94" curve="180"/>
+<pin name="1" x="2.54" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="2.54" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -880,6 +1116,83 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 </device>
 </devices>
 </deviceset>
+<deviceset name="RN2483" prefix="U">
+<description>RN2483 Microchip Low-Power Lora Transceiver Module
+
+NOT TESTED
+There are testpads on the bottom of the device. The mask is supposed to cover that, but I have not tested it in practice yet.
+
+Info: http://www.microchip.com/wwwproducts/Devices.aspx?product=RN2483
+
+Datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/50002346B.pdf
+
+Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c100e20856abe563dfe8824e9cc4bd/lib/Octanis1.lbr</description>
+<gates>
+<gate name="G$1" symbol="RN2483" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="RN2483">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8 GND9 GND10 GND11 GND12"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO1" pad="GPIO1"/>
+<connect gate="G$1" pin="GPIO10" pad="GPIO10"/>
+<connect gate="G$1" pin="GPIO11" pad="GPIO11"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO3" pad="GPIO3"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="GPIO6" pad="GPIO6"/>
+<connect gate="G$1" pin="GPIO7" pad="GPIO7"/>
+<connect gate="G$1" pin="GPIO8" pad="GPIO8"/>
+<connect gate="G$1" pin="GPIO9" pad="GPIO9"/>
+<connect gate="G$1" pin="RESET°" pad="RESET°"/>
+<connect gate="G$1" pin="RFH" pad="RFH"/>
+<connect gate="G$1" pin="RFL" pad="RFL"/>
+<connect gate="G$1" pin="UART_CTS" pad="UART_CTS"/>
+<connect gate="G$1" pin="UART_RTS" pad="UART_RTS"/>
+<connect gate="G$1" pin="UART_RX" pad="UART_RX"/>
+<connect gate="G$1" pin="UART_TX" pad="UART_TX"/>
+<connect gate="G$1" pin="VDD" pad="VDD VDD2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="RN2483"/>
+</technology>
+<technology name="ALLPINS">
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMA_CONNECTOR" prefix="J">
+<description>Straight SMA Connector  &lt;a href="https://pricing.snapeda.com/parts/SMA%20CONNECTOR/LPRS/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMA_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LPRS_SMA_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="G1 G2 G3 G4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Warning"/>
+<attribute name="DESCRIPTION" value=" RF Connectors / Coaxial Connectors SMA Coaxial Right angled "/>
+<attribute name="MF" value="LPRS"/>
+<attribute name="MP" value="SMA CONNECTOR"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/SMA CONNECTOR/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
@@ -937,6 +1250,85 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 </deviceset>
 </devicesets>
 </library>
+<library name="--TPS22860DBVR">
+<packages>
+<package name="SOT95P280X145-6N">
+<wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<circle x="-2.5" y="0.95" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.5" y="0.95" radius="0.1" width="0.2" layer="51"/>
+<wire x1="1.05" y1="1.7" x2="-1.05" y2="1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="-1.49" x2="2.11" y2="1.49" width="0.05" layer="39"/>
+<text x="-2.8" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.9" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0.8" y1="1.56" x2="-0.8" y2="1.56" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.56" x2="0.8" y2="-1.56" width="0.127" layer="21"/>
+<wire x1="1.05" y1="1.49" x2="1.05" y2="1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="1.49" x2="1.05" y2="1.49" width="0.05" layer="39"/>
+<wire x1="-1.05" y1="-1.7" x2="1.05" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-2.11" y1="1.49" x2="-2.11" y2="-1.49" width="0.05" layer="39"/>
+<wire x1="-1.05" y1="-1.49" x2="-1.05" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-2.11" y1="-1.49" x2="-1.05" y2="-1.49" width="0.05" layer="39"/>
+<wire x1="-1.05" y1="1.49" x2="-1.05" y2="1.7" width="0.05" layer="39"/>
+<wire x1="-2.11" y1="1.49" x2="-1.05" y2="1.49" width="0.05" layer="39"/>
+<wire x1="1.05" y1="-1.49" x2="1.05" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="-1.49" x2="1.05" y2="-1.49" width="0.05" layer="39"/>
+<smd name="1" x="-1.255" y="0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
+<smd name="2" x="-1.255" y="0" dx="1.21" dy="0.58" layer="1" roundness="25"/>
+<smd name="3" x="-1.255" y="-0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
+<smd name="6" x="1.255" y="0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
+<smd name="5" x="1.255" y="0" dx="1.21" dy="0.58" layer="1" roundness="25"/>
+<smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TPS22860DBVR">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
+<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="ON" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="VBIAS" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="VIN" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="VOUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TPS22860DBVR" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/TPS22860DBVR/Texas%20Instruments/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS22860DBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-6N">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="ON" pad="6"/>
+<connect gate="G$1" pin="VBIAS" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value=" 0.73-?, 5-V, ultra-low leakage load switch 6-SOT-23 -40 to 85 "/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MP" value="TPS22860DBVR"/>
+<attribute name="PACKAGE" value="SOT-23-6 Texas Instruments"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/TPS22860DBVR/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -979,6 +1371,16 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U1" library="--CoolTeamLib" deviceset="RN2483" device="" value="RN2483"/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U2" library="--TPS22860DBVR" deviceset="TPS22860DBVR" device=""/>
+<part name="C6" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="C7" library="--CoolTeamLib" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1µF"/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J2" library="--CoolTeamLib" deviceset="SMA_CONNECTOR" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1021,6 +1423,41 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
+<instance part="U1" gate="G$1" x="213.36" y="182.88" smashed="yes">
+<attribute name="NAME" x="208.28" y="196.85" size="1.778" layer="95"/>
+<attribute name="VALUE" x="208.28" y="193.04" size="1.778" layer="96"/>
+</instance>
+<instance part="GND11" gate="1" x="238.76" y="162.56" smashed="yes">
+<attribute name="VALUE" x="236.22" y="160.02" size="1.778" layer="96"/>
+</instance>
+<instance part="U2" gate="G$1" x="236.22" y="134.62" smashed="yes">
+<attribute name="NAME" x="223.52" y="145.78" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="223.52" y="120.46" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="C6" gate="G$1" x="259.08" y="137.16" smashed="yes">
+<attribute name="NAME" x="260.604" y="137.541" size="1.778" layer="95"/>
+<attribute name="VALUE" x="260.604" y="132.461" size="1.778" layer="96"/>
+</instance>
+<instance part="C7" gate="G$1" x="213.36" y="132.08" smashed="yes">
+<attribute name="NAME" x="214.884" y="132.461" size="1.778" layer="95"/>
+<attribute name="VALUE" x="214.884" y="127.381" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V4" gate="G$1" x="208.28" y="142.24" smashed="yes">
+<attribute name="VALUE" x="205.74" y="137.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND12" gate="1" x="213.36" y="121.92" smashed="yes">
+<attribute name="VALUE" x="210.82" y="119.38" size="1.778" layer="96"/>
+</instance>
+<instance part="GND13" gate="1" x="259.08" y="124.46" smashed="yes">
+<attribute name="VALUE" x="256.54" y="121.92" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="251.46" y="195.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="252.984" y="199.39" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="242.316" y="201.422" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="248.92" y="190.5" smashed="yes">
+<attribute name="VALUE" x="246.38" y="187.96" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1046,6 +1483,29 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 <junction x="83.82" y="93.98"/>
 <pinref part="IC1" gate="G$1" pin="GND_2"/>
 <wire x1="121.92" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="236.22" y1="165.1" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="124.46" x2="213.36" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="254" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="129.54" x2="259.08" y2="127" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="259.08" y1="132.08" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
+<junction x="259.08" y="129.54"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1107,6 +1567,19 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 <wire x1="104.14" y1="127" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
 <junction x="104.14" y="127"/>
 </segment>
+<segment>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<pinref part="U2" gate="G$1" pin="VBIAS"/>
+<wire x1="208.28" y1="139.7" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VIN"/>
+<wire x1="213.36" y1="139.7" x2="218.44" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="137.16" x2="213.36" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="137.16" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
+<junction x="213.36" y="139.7"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="134.62" x2="213.36" y2="137.16" width="0.1524" layer="91"/>
+<junction x="213.36" y="137.16"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -1129,6 +1602,11 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 <wire x1="172.72" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
 <label x="175.26" y="109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="UART_TX"/>
+<wire x1="236.22" y1="177.8" x2="251.46" y2="177.8" width="0.1524" layer="91"/>
+<label x="248.92" y="177.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TXD" class="0">
 <segment>
@@ -1137,6 +1615,60 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds30498.pdf"&gt; Da
 <wire x1="172.72" y1="104.14" x2="172.72" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
 <label x="175.26" y="101.6" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="UART_RX"/>
+<wire x1="236.22" y1="180.34" x2="251.46" y2="180.34" width="0.1524" layer="91"/>
+<label x="248.92" y="180.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RN2483_VDD" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="VOUT"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="254" y1="142.24" x2="259.08" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="142.24" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="142.24" x2="266.7" y2="142.24" width="0.1524" layer="91"/>
+<junction x="259.08" y="142.24"/>
+<label x="254" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="236.22" y1="167.64" x2="246.38" y2="167.64" width="0.1524" layer="91"/>
+<label x="243.84" y="167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RN2483_ENABLE" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IO16"/>
+<wire x1="160.02" y1="124.46" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
+<label x="170.18" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="ON"/>
+<wire x1="218.44" y1="142.24" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="142.24" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
+<label x="193.04" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RN2483_RESET" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IO17"/>
+<wire x1="160.02" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
+<label x="170.18" y="121.92" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="RESET°"/>
+<wire x1="236.22" y1="182.88" x2="251.46" y2="182.88" width="0.1524" layer="91"/>
+<label x="243.84" y="182.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RFH"/>
+<wire x1="236.22" y1="187.96" x2="251.46" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="187.96" x2="251.46" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1876,6 +1876,21 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <wire x1="50.8" y1="162.56" x2="50.8" y2="165.1" width="0.1524" layer="91"/>
 <junction x="50.8" y="165.1"/>
 </segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="K"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="83.82" y1="154.94" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="K"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="93.98" y1="154.94" x2="93.98" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="K"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="104.14" y1="154.94" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>

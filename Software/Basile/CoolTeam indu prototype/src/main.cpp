@@ -45,7 +45,7 @@ void firstBoot()
 
   bootCount++;
 
-  Serial.println("First boot!");
+  //Serial.println("First boot!");
 }
 
 
@@ -54,10 +54,10 @@ void wakeUpRoutine()
 {
   temperature = sensor.readTemp();
   humidity = sensor.readHumidity();
-  Serial.print("TEMP(C): ");
-  Serial.println(temperature);
-  Serial.print("%RH: ");
-  Serial.println(humidity);
+  //Serial.print("TEMP(C): ");
+  //Serial.println(temperature);
+  //Serial.print("%RH: ");
+  //Serial.println(humidity);
 }
 
 //Methode die de hallsensor uitleest
@@ -82,9 +82,9 @@ void readHallSensor(){
 //Main setup
 void setup()
 {
-  Serial.begin(115200);
-  while (!Serial)
-    ;
+  //Serial.begin(115200);
+  //while (!Serial)
+  //  ;
   sensor.begin();
 
   //Logica die kijkt indien het systeem uit slaap komt of als het voor het eerst start
@@ -93,10 +93,10 @@ void setup()
   else
     wakeUpRoutine();
 
-  readHallSensor();
+  //readHallSensor();
 
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_25, 1);   //Selecteer wake-up pin
-  Serial.println("Going to sleep now");
+  //Serial.println("Going to sleep now");
   //Slaap
   esp_deep_sleep_start();
 }
