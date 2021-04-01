@@ -1671,11 +1671,11 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 </instance>
 <instance part="S1" gate="G$1" x="63.5" y="185.42" smashed="yes">
 <attribute name="NAME" x="72.39" y="193.04" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="72.39" y="190.5" size="1.778" layer="96" align="center-left"/>
+<attribute name="VALUE" x="64.77" y="190.5" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="S2" gate="G$1" x="109.22" y="185.42" smashed="yes">
 <attribute name="NAME" x="115.57" y="193.04" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="115.57" y="190.5" size="1.778" layer="96" align="center-left"/>
+<attribute name="VALUE" x="107.95" y="190.5" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="C8" gate="G$1" x="139.7" y="182.88" smashed="yes" rot="R180">
 <attribute name="NAME" x="144.526" y="187.579" size="1.778" layer="95" rot="R180"/>

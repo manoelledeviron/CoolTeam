@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -1555,7 +1555,7 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 </class>
 </classes>
 <parts>
-<part name="U3" library="--CoolTeamLib" deviceset="ESP32-WROOM-32E_M113EH3200PH3Q" device=""/>
+<part name="U3" library="--CoolTeamLib" deviceset="ESP32-WROOM-32E_M113EH3200PH3Q" device="" value="ESP32"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -1659,8 +1659,8 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <attribute name="VALUE" x="48.26" y="43.434" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="48.26" y="61.468" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND6" gate="1" x="96.52" y="50.8" smashed="yes">
-<attribute name="VALUE" x="93.98" y="48.26" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="63.5" y="58.42" smashed="yes">
+<attribute name="VALUE" x="60.96" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="73.66" y="66.04" smashed="yes">
 <attribute name="VALUE" x="71.12" y="60.96" size="1.778" layer="96" rot="R90"/>
@@ -1724,12 +1724,6 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <wire x1="45.72" y1="109.22" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="58.42" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="55.88" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="9"/>
 <wire x1="213.36" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="71.12" x2="243.84" y2="66.04" width="0.1524" layer="91"/>
@@ -1756,6 +1750,12 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="139.7" y1="177.8" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
 <junction x="139.7" y="177.8"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="58.42" y1="58.42" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="58.42" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1811,10 +1811,10 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <junction x="223.52" y="127"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="58.42" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="73.66" y1="58.42" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="55.88" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="58.42" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="10"/>
@@ -1870,20 +1870,6 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <label x="147.32" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RN2483_ENABLE" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="IO16"/>
-<wire x1="165.1" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
-<label x="175.26" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RN2483_RESET" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="IO17"/>
-<wire x1="165.1" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
-<label x="175.26" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="HALL_EN" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO4"/>
@@ -1908,6 +1894,11 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <wire x1="213.36" y1="114.3" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <junction x="213.36" y="104.14"/>
 </segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="8"/>
+<wire x1="213.36" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
+<label x="223.52" y="68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
@@ -1918,11 +1909,6 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <wire x1="223.52" y1="111.76" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="114.3" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
 <junction x="223.52" y="111.76"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="8"/>
-<wire x1="213.36" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="223.52" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="7"/>
@@ -2006,6 +1992,34 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="53.34" x2="223.52" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RXD2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IO16"/>
+<wire x1="165.1" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
+<label x="175.26" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TXD2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IO17"/>
+<wire x1="165.1" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
+<label x="175.26" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RN2483_RESET" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IO18"/>
+<wire x1="165.1" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
+<label x="175.26" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RN2483_ENABLE" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IO19"/>
+<wire x1="165.1" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<label x="175.26" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2101,14 +2115,14 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 <junction x="121.92" y="91.44"/>
 </segment>
 </net>
-<net name="RXD" class="0">
+<net name="RXD2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="UART_TX"/>
 <wire x1="144.78" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <label x="157.48" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TXD" class="0">
+<net name="TXD2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="UART_RX"/>
 <wire x1="144.78" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
