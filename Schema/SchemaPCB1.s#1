@@ -2255,6 +2255,13 @@ http://www.zetex.com&lt;p&gt;
 <label x="175.26" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="*GPS_ENABLE" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="NC_7"/>
+<wire x1="165.1" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<label x="175.26" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
