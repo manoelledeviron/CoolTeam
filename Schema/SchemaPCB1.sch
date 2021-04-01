@@ -1931,7 +1931,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="PMOSSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
+<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="PMOSSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="SiSH615ADN"/>
 <part name="R5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="10k"/>
 <part name="C10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="0.1uF"/>
 <part name="C11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="C" device="" value="1uF"/>
@@ -1945,6 +1945,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="R8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2584,6 +2585,10 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <instance part="P+3" gate="VCC" x="86.36" y="147.32" smashed="yes">
 <attribute name="VALUE" x="83.82" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R8" gate="G$1" x="170.18" y="142.24" smashed="yes">
+<attribute name="NAME" x="167.64" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="167.64" y="138.43" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2591,11 +2596,11 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <net name="I2C_SDA" class="0">
 <segment>
 <wire x1="93.98" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<label x="73.66" y="132.08" size="1.778" layer="95" rot="R180"/>
+<label x="81.28" y="132.08" size="1.778" layer="95" rot="R180"/>
 <pinref part="U?1" gate="G$1" pin="I2C_SDA"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <junction x="86.36" y="132.08"/>
-<wire x1="86.36" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
@@ -2641,7 +2646,12 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <segment>
 <pinref part="T1" gate="A" pin="G"/>
 <wire x1="182.88" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
-<label x="175.26" y="142.24" size="1.778" layer="95" rot="R180"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
+<label x="162.56" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$6" class="0">
