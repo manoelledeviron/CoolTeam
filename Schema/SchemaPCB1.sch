@@ -1545,99 +1545,6 @@ Source: &lt;a href="http://spec_sheets.e-switch.com/specs/P090002.pdf"&gt; Datas
 </deviceset>
 </devicesets>
 </library>
-<library name="zetex" urn="urn:adsk.eagle:library:418">
-<description>&lt;b&gt;Zetex Power MOS FETs, Bridges, Diodes&lt;/b&gt;&lt;p&gt;
-http://www.zetex.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT-23" urn="urn:adsk.eagle:footprint:30948/1" library_version="5">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
-<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="0.889" layer="1"/>
-<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
-<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
-<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOT-23" urn="urn:adsk.eagle:package:30981/1" type="box" library_version="5">
-<description>Small Outline Transistor</description>
-<packageinstances>
-<packageinstance name="SOT-23"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="P_MOSFET" urn="urn:adsk.eagle:symbol:30956/1" library_version="5">
-<wire x1="-1.651" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.159" x2="0" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-0.508" x2="1.397" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-3.048" x2="0" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.159" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="3.048" x2="1.397" y2="3.048" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="3.048" x2="1.397" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.159" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<rectangle x1="-2.032" y1="1.397" x2="-1.524" y2="2.921" layer="94"/>
-<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
-<rectangle x1="-2.032" y1="-2.921" x2="-1.524" y2="-1.397" layer="94"/>
-<rectangle x1="0.762" y1="-0.635" x2="2.032" y2="-0.508" layer="94"/>
-<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<polygon width="0.1016" layer="94">
-<vertex x="-0.127" y="0"/>
-<vertex x="-1.143" y="-0.635"/>
-<vertex x="-1.143" y="0.635"/>
-</polygon>
-<polygon width="0.1016" layer="94">
-<vertex x="1.397" y="-0.508"/>
-<vertex x="0.762" y="0.508"/>
-<vertex x="2.032" y="0.508"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PMOSSOT23" urn="urn:adsk.eagle:component:31001/2" prefix="T" uservalue="yes" library_version="5">
-<description>&lt;b&gt;MOS FET&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="P_MOSFET" x="0" y="0" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="A" pin="D" pad="1"/>
-<connect gate="A" pin="G" pad="3"/>
-<connect gate="A" pin="S" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:30981/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="15" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="gps">
 <packages>
 <package name="GPS">
@@ -1657,6 +1564,21 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="1"/>
 <hole x="0" y="0.5" drill="3"/>
 </package>
+<package name="PMOS">
+<wire x1="-1.65" y1="-1.65" x2="-1.65" y2="1.65" width="0.127" layer="21"/>
+<wire x1="-1.65" y1="1.65" x2="1.65" y2="1.65" width="0.127" layer="21"/>
+<wire x1="1.65" y1="1.65" x2="1.65" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="1.65" y1="-1.65" x2="-1.65" y2="-1.65" width="0.127" layer="21"/>
+<smd name="P$8" x="1.445" y="0.975" dx="0.41" dy="0.3" layer="1"/>
+<smd name="P$1" x="-1.465" y="0.975" dx="0.43" dy="0.3" layer="1"/>
+<smd name="P$2" x="-1.465" y="0.325" dx="0.43" dy="0.3" layer="1"/>
+<smd name="P$3" x="-1.465" y="-0.325" dx="0.43" dy="0.3" layer="1"/>
+<smd name="P$4" x="-1.465" y="-0.975" dx="0.43" dy="0.3" layer="1"/>
+<smd name="P$7" x="1.445" y="0.325" dx="0.41" dy="0.3" layer="1"/>
+<smd name="P$6" x="1.445" y="-0.325" dx="0.41" dy="0.3" layer="1"/>
+<smd name="P$5" x="1.445" y="-0.975" dx="0.41" dy="0.3" layer="1"/>
+<rectangle x1="-0.46" y1="-1.125" x2="1.24" y2="1.125" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GPS">
@@ -1674,6 +1596,20 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="-142.24" y1="22.86" x2="-142.24" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-142.24" y1="-7.62" x2="-170.18" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-170.18" y1="-7.62" x2="-170.18" y2="22.86" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PMOS">
+<wire x1="-2" y1="4" x2="-2" y2="-6" width="0.254" layer="94"/>
+<wire x1="-2" y1="-6" x2="11" y2="-6" width="0.254" layer="94"/>
+<wire x1="11" y1="-6" x2="11" y2="4" width="0.254" layer="94"/>
+<wire x1="11" y1="4" x2="-2" y2="4" width="0.254" layer="94"/>
+<pin name="S1" x="-7" y="2" length="middle"/>
+<pin name="S2" x="-7" y="0" length="middle"/>
+<pin name="S3" x="-7" y="-2" length="middle"/>
+<pin name="G" x="-7" y="-4" length="middle"/>
+<pin name="D1" x="16" y="-4" length="middle" rot="R180"/>
+<pin name="D2" x="16" y="-2" length="middle" rot="R180"/>
+<pin name="D3" x="16" y="0" length="middle" rot="R180"/>
+<pin name="D4" x="16" y="2" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1694,6 +1630,28 @@ http://www.zetex.com&lt;p&gt;
 <connect gate="G$1" pin="VBACKUP" pad="VBACKUP"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="WAKE-UP" pad="WAKE-UP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PMOS" prefix="Q?">
+<gates>
+<gate name="G$1" symbol="PMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PMOS">
+<connects>
+<connect gate="G$1" pin="D1" pad="P$5"/>
+<connect gate="G$1" pin="D2" pad="P$6"/>
+<connect gate="G$1" pin="D3" pad="P$7"/>
+<connect gate="G$1" pin="D4" pad="P$8"/>
+<connect gate="G$1" pin="G" pad="P$4"/>
+<connect gate="G$1" pin="S1" pad="P$1"/>
+<connect gate="G$1" pin="S2" pad="P$2"/>
+<connect gate="G$1" pin="S3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9685,7 +9643,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="T1" library="zetex" library_urn="urn:adsk.eagle:library:418" deviceset="PMOSSOT23" device="" package3d_urn="urn:adsk.eagle:package:30981/1" value="SiSH615ADN"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U?1" library="gps" deviceset="GPS" device=""/>
@@ -9699,6 +9656,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="Q?1" library="gps" deviceset="PMOS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10258,12 +10216,8 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="GND10" gate="1" x="144.78" y="116.84" smashed="yes" rot="R90"/>
-<instance part="+3V8" gate="G$1" x="187.96" y="157.48" smashed="yes">
-<attribute name="VALUE" x="185.42" y="152.4" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="T1" gate="A" x="187.96" y="144.78" smashed="yes">
-<attribute name="VALUE" x="190.5" y="144.78" size="1.778" layer="96"/>
-<attribute name="NAME" x="190.5" y="147.32" size="1.778" layer="95"/>
+<instance part="+3V8" gate="G$1" x="182.88" y="154.94" smashed="yes">
+<attribute name="VALUE" x="180.34" y="149.86" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND16" gate="1" x="167.64" y="119.38" smashed="yes">
 <attribute name="VALUE" x="165.1" y="116.84" size="1.778" layer="96"/>
@@ -10310,6 +10264,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="+3V10" gate="G$1" x="86.36" y="147.32" smashed="yes">
 <attribute name="VALUE" x="83.82" y="142.24" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="Q?1" gate="G$1" x="193.802" y="146.2405" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10358,11 +10313,6 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<pinref part="T1" gate="A" pin="D"/>
-<wire x1="187.96" y1="154.94" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="78.74" y1="142.24" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
@@ -10372,12 +10322,26 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="Q?1" gate="G$1" pin="S3"/>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<wire x1="186.802" y1="144.2405" x2="182.88" y2="144.2405" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="144.2405" x2="182.88" y2="146.2405" width="0.1524" layer="91"/>
+<pinref part="Q?1" gate="G$1" pin="S2"/>
+<wire x1="182.88" y1="146.2405" x2="182.88" y2="148.2405" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="149.86" x2="182.88" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="186.802" y1="146.2405" x2="182.88" y2="146.2405" width="0.1524" layer="91"/>
+<pinref part="Q?1" gate="G$1" pin="S1"/>
+<wire x1="186.802" y1="148.2405" x2="182.88" y2="148.2405" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="148.2405" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="*GPS_ENABLE" class="0">
 <segment>
-<pinref part="T1" gate="A" pin="G"/>
-<wire x1="182.88" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="186.802" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="Q?1" gate="G$1" pin="G"/>
+<wire x1="186.802" y1="142.24" x2="186.802" y2="142.2405" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -10396,10 +10360,26 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="T1" gate="A" pin="S"/>
-<wire x1="187.96" y1="139.7" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="Q?1" gate="G$1" pin="D4"/>
+<wire x1="209.802" y1="148.2405" x2="215.9" y2="148.2405" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="148.2405" x2="215.9" y2="146.304" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="146.304" x2="215.9" y2="146.2405" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="142.24" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="Q?1" gate="G$1" pin="D3"/>
+<wire x1="209.802" y1="146.2405" x2="215.9" y2="146.2405" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="146.2405" x2="215.9" y2="144.272" width="0.1524" layer="91"/>
+<pinref part="Q?1" gate="G$1" pin="D2"/>
+<wire x1="215.9" y1="144.272" x2="215.9" y2="144.2405" width="0.1524" layer="91"/>
+<wire x1="209.802" y1="144.2405" x2="215.9" y2="144.2405" width="0.1524" layer="91"/>
+<pinref part="Q?1" gate="G$1" pin="D1"/>
+<wire x1="215.9" y1="144.2405" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="209.802" y1="142.2405" x2="209.802" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="209.802" y1="142.24" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
+<junction x="215.9" y="142.24"/>
+<junction x="215.9" y="146.304"/>
+<junction x="215.9" y="144.272"/>
 </segment>
 </net>
 <net name="GPS_ENABLE" class="0">

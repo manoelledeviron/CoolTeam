@@ -2707,7 +2707,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
