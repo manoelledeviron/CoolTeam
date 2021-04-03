@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -376,7 +376,6 @@ MELF 0.10 W</description>
 <wire x1="-3.3" y1="-1.65" x2="-1.65" y2="-3.3" width="0.1" layer="51"/>
 <wire x1="-1.65" y1="-3.3" x2="3.3" y2="-3.3" width="0.1" layer="51"/>
 <wire x1="3.3" y1="-3.3" x2="3.3" y2="3.3" width="0.1" layer="51"/>
-<wire x1="-4.575" y1="3.3" x2="3.3" y2="3.3" width="0.2" layer="21"/>
 <wire x1="-1.65" y1="-3.3" x2="3.3" y2="-3.3" width="0.2" layer="21"/>
 </package>
 <package name="RN2483">
@@ -432,7 +431,7 @@ Adapted from: https://github.com/Octanis1/Octanis1-Electronics/blob/ae493cac28c1
 <smd name="P$9" x="17.78" y="6.35" dx="1.016" dy="1.524" layer="1" rot="R270"/>
 <smd name="P$10" x="17.78" y="5.08" dx="1.016" dy="1.524" layer="1" rot="R270"/>
 <smd name="P$11" x="0" y="7.62" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<rectangle x1="3.81" y1="2.54" x2="13.97" y2="15" layer="51"/>
+<rectangle x1="3.81" y1="2.54" x2="13.97" y2="15" layer="48"/>
 <text x="2.54" y="22.86" size="1.27" layer="25">&gt;Name</text>
 <text x="2.54" y="21.59" size="1.27" layer="27">&gt;Value</text>
 </package>

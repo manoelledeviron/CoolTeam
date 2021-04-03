@@ -163,7 +163,7 @@
 <wire x1="50" y1="32" x2="0" y2="32" width="0" layer="20"/>
 <wire x1="0" y1="32" x2="0" y2="0" width="0" layer="20"/>
 <hole x="4" y="4" drill="3"/>
-<dimension x1="42.45" y1="4.27" x2="42.45" y2="27.77" x3="46.6" y3="16.02" textsize="1.778" layer="1" dtype="vertical"/>
+<dimension x1="42.45" y1="4.27" x2="42.45" y2="27.77" x3="46.6" y3="16.02" textsize="1.778" layer="47" dtype="vertical"/>
 <hole x="4" y="28" drill="3"/>
 <hole x="46" y="28" drill="3"/>
 <hole x="46" y="4" drill="3"/>
@@ -530,31 +530,47 @@ design rules under a new name.</description>
 <signal name="INT">
 <contactref element="J2" pad="2"/>
 <contactref element="J4" pad="10"/>
-<wire x1="11.58" y1="9.22" x2="26.16" y2="4.3" width="0" layer="19" extent="1-1"/>
+<wire x1="11.58" y1="9.22" x2="21.24" y2="9.22" width="0.3048" layer="1"/>
+<wire x1="21.24" y1="9.22" x2="26.16" y2="4.3" width="0.3048" layer="1"/>
+<contactref element="J4" pad="9"/>
+<wire x1="11.58" y1="9.22" x2="6.5" y2="9.22" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="J2" pad="6"/>
-<contactref element="J4" pad="8"/>
-<wire x1="11.58" y1="11.76" x2="36.32" y2="4.3" width="0" layer="19" extent="1-1"/>
+<contactref element="J4" pad="6"/>
+<wire x1="11.58" y1="14.3" x2="26.32" y2="14.3" width="0.3048" layer="1"/>
+<wire x1="26.32" y1="14.3" x2="36.32" y2="4.3" width="0.3048" layer="1"/>
+<contactref element="J4" pad="5"/>
+<wire x1="11.58" y1="14.3" x2="6.5" y2="14.3" width="0.3048" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="J2" pad="5"/>
-<contactref element="J4" pad="6"/>
-<wire x1="11.58" y1="14.3" x2="33.78" y2="4.3" width="0" layer="19" extent="1-1"/>
+<contactref element="J4" pad="8"/>
+<wire x1="11.58" y1="11.76" x2="26.32" y2="11.76" width="0.3048" layer="1"/>
+<wire x1="26.32" y1="11.76" x2="33.78" y2="4.3" width="0.3048" layer="1"/>
+<contactref element="J4" pad="7"/>
+<wire x1="11.58" y1="11.76" x2="6.5" y2="11.76" width="0.3048" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="J2" pad="8"/>
 <contactref element="J1" pad="1"/>
 <contactref element="J1" pad="6"/>
 <contactref element="J4" pad="4"/>
-<wire x1="23.64" y1="27.79" x2="36.34" y2="27.79" width="0" layer="19" extent="1-1"/>
-<wire x1="11.58" y1="16.84" x2="23.64" y2="27.79" width="0" layer="19" extent="1-1"/>
-<wire x1="41.4" y1="4.3" x2="36.34" y2="27.79" width="0" layer="19" extent="1-1"/>
+<polygon width="0.3048" layer="16">
+<vertex x="0" y="32"/>
+<vertex x="50" y="32"/>
+<vertex x="50" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<contactref element="J4" pad="3"/>
 </signal>
 <signal name="+3V3">
 <contactref element="J1" pad="2"/>
 <contactref element="J4" pad="2"/>
-<wire x1="11.58" y1="19.38" x2="26.18" y2="27.79" width="0" layer="19" extent="1-1"/>
+<wire x1="11.58" y1="19.38" x2="17.77" y2="19.38" width="0.3048" layer="1"/>
+<wire x1="17.77" y1="19.38" x2="26.18" y2="27.79" width="0.3048" layer="1"/>
+<contactref element="J4" pad="1"/>
+<wire x1="11.58" y1="19.38" x2="6.5" y2="19.38" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -167,6 +167,13 @@
 <hole x="4" y="28" drill="3"/>
 <hole x="46" y="28" drill="3"/>
 <hole x="46" y="4" drill="3"/>
+<text x="18.57" y="18.96" size="1.4224" layer="27">+3V3</text>
+<text x="18.8" y="16.31" size="1.4224" layer="27">GND</text>
+<text x="18.86" y="13.7" size="1.4224" layer="27">SDA</text>
+<text x="18.98" y="11.22" size="1.4224" layer="27">SCL</text>
+<text x="18.96" y="8.49" size="1.4224" layer="27">INT</text>
+<text x="47" y="12" size="1.4224" layer="27" rot="R90">HDC2010</text>
+<text x="23" y="24" size="1.4224" layer="27">The Cool Team 2021</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
@@ -522,8 +529,8 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="39700-0205" x="1.42" y="-6.02" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="538-39700-0205" x="1.42" y="-6.02" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/39700-0205?qs=iVQMhOBiFE44PbCr6CEU0w%3D%3D" x="1.42" y="-6.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="10" y="15.84" size="1.27" layer="25" rot="R270" align="center"/>
-<attribute name="VALUE" x="10" y="15.84" size="1.27" layer="27" rot="R270" align="center"/>
+<attribute name="NAME" x="9" y="16.84" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="10" y="21.84" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>

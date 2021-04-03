@@ -158,13 +158,15 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="66" y2="0" width="0" layer="20"/>
-<wire x1="66" y1="0" x2="66" y2="32" width="0" layer="20"/>
-<wire x1="66" y1="32" x2="0" y2="32" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="50" y2="0" width="0" layer="20"/>
+<wire x1="50" y1="0" x2="50" y2="32" width="0" layer="20"/>
+<wire x1="50" y1="32" x2="0" y2="32" width="0" layer="20"/>
 <wire x1="0" y1="32" x2="0" y2="0" width="0" layer="20"/>
 <hole x="4" y="4" drill="3"/>
 <dimension x1="41.6" y1="3.9" x2="41.6" y2="26.7" x3="46.6" y3="15.3" textsize="1.778" layer="1" dtype="vertical"/>
 <hole x="4" y="28" drill="3"/>
+<hole x="46" y="28" drill="3"/>
+<hole x="46" y="4" drill="3"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">

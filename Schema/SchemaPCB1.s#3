@@ -785,6 +785,28 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <wire x1="-4" y1="9.8" x2="-4.12" y2="-2.8" width="0.1" layer="21"/>
 <wire x1="-4.12" y1="-2.8" x2="11.2" y2="-2.8" width="0.1" layer="21"/>
 </package>
+<package name="397000002">
+<description>&lt;b&gt;39700-0002-1&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1" diameter="1.5"/>
+<pad name="2" x="0" y="5.08" drill="1" diameter="1.5"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.5"/>
+<pad name="4" x="2.54" y="5.08" drill="1" diameter="1.5"/>
+<text x="2.47" y="3.78" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="2.47" y="3.78" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.33" y1="10.58" x2="6.27" y2="10.58" width="0.2" layer="51"/>
+<wire x1="6.27" y1="10.58" x2="6.27" y2="-3.02" width="0.2" layer="51"/>
+<wire x1="6.27" y1="-3.02" x2="-1.33" y2="-3.02" width="0.2" layer="51"/>
+<wire x1="-1.33" y1="-3.02" x2="-1.33" y2="10.58" width="0.2" layer="51"/>
+<wire x1="-1.33" y1="10.58" x2="6.27" y2="10.58" width="0.1" layer="21"/>
+<wire x1="6.27" y1="10.58" x2="6.27" y2="-3.02" width="0.1" layer="21"/>
+<wire x1="6.27" y1="-3.02" x2="-1.33" y2="-3.02" width="0.1" layer="21"/>
+<wire x1="-1.33" y1="-3.02" x2="-1.33" y2="10.58" width="0.1" layer="21"/>
+<wire x1="-2.33" y1="11.58" x2="7.27" y2="11.58" width="0.1" layer="51"/>
+<wire x1="7.27" y1="11.58" x2="7.27" y2="-4.02" width="0.1" layer="51"/>
+<wire x1="7.27" y1="-4.02" x2="-2.33" y2="-4.02" width="0.1" layer="51"/>
+<wire x1="-2.33" y1="-4.02" x2="-2.33" y2="11.58" width="0.1" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="M0805" urn="urn:adsk.eagle:package:23556/1" type="box">
@@ -1082,6 +1104,18 @@ CONN_10
 <pin name="8" x="22.86" y="-7.62" length="middle" rot="R180"/>
 <pin name="9" x="0" y="-10.16" length="middle"/>
 <pin name="10" x="22.86" y="-10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="39700-0002">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" length="middle"/>
+<pin name="2" x="0" y="0" length="middle"/>
+<pin name="3" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1554,6 +1588,33 @@ Source: &lt;a href="https://componentsearchengine.com//39700-0205.pdf"&gt; Datas
 <attribute name="MANUFACTURER_PART_NUMBER" value="39700-0205" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="538-39700-0205" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/39700-0205?qs=iVQMhOBiFE44PbCr6CEU0w%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="39700-0002" prefix="J">
+<description>&lt;b&gt;Fixed Terminal Blocks SPRING TERMINAL BLOCK 2C-GREEN&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/39700-0002.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="39700-0002" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="397000002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Fixed Terminal Blocks SPRING TERMINAL BLOCK 2C-GREEN" constant="no"/>
+<attribute name="HEIGHT" value="12.7mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="39700-0002" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-39700-0002" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/39700-0002?qs=EibfsPFbZaqB1%252BjDW0HuPQ%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9763,6 +9824,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="J5" library="--CoolTeamLib" deviceset="39700-0002" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10155,9 +10217,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="223.52" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="NC_6"/>
-<wire x1="127" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
-<label x="116.84" y="78.74" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="IO14"/>
+<wire x1="127" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
+<label x="116.84" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IO2" class="0">
@@ -10187,8 +10249,8 @@ Source: AVX .. aphvc.pdf</description>
 <net name="HDC2010_INT" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO25"/>
-<wire x1="127" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
-<label x="106.68" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<label x="114.3" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -10413,7 +10475,6 @@ Source: AVX .. aphvc.pdf</description>
 <net name="I2C_SDA" class="0">
 <segment>
 <wire x1="93.98" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<label x="81.28" y="132.08" size="1.778" layer="95" rot="R180"/>
 <pinref part="U?1" gate="G$1" pin="I2C_SDA"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
@@ -10423,7 +10484,6 @@ Source: AVX .. aphvc.pdf</description>
 <net name="I2C_SCL" class="0">
 <segment>
 <wire x1="93.98" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
-<label x="73.66" y="127" size="1.778" layer="95" rot="R180"/>
 <pinref part="U?1" gate="G$1" pin="I2C_SCL"/>
 <wire x1="78.74" y1="132.08" x2="78.74" y2="127" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
@@ -10565,6 +10625,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND4" gate="1" x="160.02" y="106.68" smashed="yes">
 <attribute name="VALUE" x="157.48" y="104.14" size="1.778" layer="96"/>
 </instance>
+<instance part="J5" gate="G$1" x="63.5" y="170.18" smashed="yes">
+<attribute name="NAME" x="69.85" y="177.8" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="69.85" y="175.26" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10614,6 +10678,27 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="99.06" y1="127" x2="71.12" y2="127" width="0.1524" layer="91"/>
 <junction x="99.06" y="127"/>
 <label x="71.12" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="170.18" x2="93.98" y2="170.18" width="0.1524" layer="91"/>
+<label x="93.98" y="170.18" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="170.18" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
+<label x="53.34" y="170.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="167.64" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="167.64" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="162.56" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="3"/>
+<wire x1="86.36" y1="167.64" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
