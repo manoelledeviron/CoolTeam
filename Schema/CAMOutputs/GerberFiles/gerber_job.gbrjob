@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2021-04-03T14:15:55Z",
+        "CreationDate": "2021-04-07T15:03:57Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -15,7 +15,7 @@
         "Name": {
             "ProjectId": "SchemaPCB1"
         },
-        "Owner": "Basile Berckmoes <basile.berckmoes@student.kuleuven.be>",
+        "Owner": "Manoelle de Viron <manoelle.deviron@student.kuleuven.be>",
         "Size": {
             "X": 63.875,
             "Y": 71.425
