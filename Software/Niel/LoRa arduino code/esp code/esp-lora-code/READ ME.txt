@@ -1,0 +1,45 @@
+Volgende methoden moeten toegevoegd worden aan de code:
+
+void transmit_temp(float temp)
+"""Versturen van de temperatuur naar The Things Network V3.
+
+    Args:
+        temp (float): waarde van de door te sturen temp tot 0,1°C
+
+    Returns:
+        void
+    """
+
+void transmit_location(double latitude, double longitude, double altitude)
+"""Versturen van de locatie naar The Things Network V3.
+
+    Args:
+        latitude (double): waarde van de door te sturen latitude tot 0.0001 °
+	longitude (double): waarde van de door te sturen longitude tot 0.0001 °
+	altitude (double): waarde van de door te sturen altitude tot 0.01 meter
+    Returns:
+        void
+    """
+
+void initialize_rn2483()
+"""Instellen van de RN2483 module. MOET TELKENS OPNIEUW NA START UP!
+
+    Args:
+        
+    Returns:
+        void
+    """
+
+Volgende extra lijnen moeten voorzien worden:
+
+#include <rn2xx3.h> // gebruik van de bijgevoegde lib
+
+rn2xx3 myLora(Serial); //object maken voor LoRa met parameter de gebruikte serieele poort
+
+uint8_t Reset = ...; //gebruikte reset pin
+
+Serial.begin(57600); // Gebruikte baudrate voor comminicatie met de RN2483
+
+Niet te vergeten:
+
+Power aanleggen voor de RN2483 voordat de communicatie wordt gestart.
