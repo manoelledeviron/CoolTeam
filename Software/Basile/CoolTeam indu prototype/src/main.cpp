@@ -1,17 +1,37 @@
 #include <Arduino.h>
 #include <sSense-HDC2010.h>
+#include <Adafruit_GPS.h>
 
 
-//I2C Addres van temp sesnor
+
+//I2C Addres van temp sensor en GPS
 #define ADDR 0x40
+#define GPSADDR 0x10
 
 //Pinnen definen van hall sensor
 #define hallDisablePin GPIO_NUM_4
 #define hallOutPin GPIO_NUM_36
 
+//Pinnen definieren van GPS
+#define GpsEnable GPIO_NUM_32
+
 //Init temp sensor object en data var's
 HDC2010 sensor(ADDR);
 float temperature = 0, humidity = 0;
+
+//Init GPS data variabelen
+bool doorOpen = false;
+bool isInitiatedGPS = false;
+Adafruit_GPS GPS(&Wire);
+uint32_t timer = millis();
+bool gotLocation = false;
+#define GPSECHO false //voor debugging en printen van raw GPS data
+
+nmea_float_t gpsLat;
+nmea_float_t gpsLatNS;
+nmea_float_t gpsLon;
+nmea_float_t gpsLonEW;
+nmea_float_t gpsAlt;
 
 //RTC geheugen var om bij te houden als het systeem uit deepsleep kwam
 RTC_DATA_ATTR int bootCount = 0;
@@ -60,6 +80,51 @@ void wakeUpRoutine()
   //Serial.println(humidity);
 }
 
+void initGPS() 
+{
+  GPS.begin(GPSADDR);
+  GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA); //GPS mode: RMC (recommended minimum) and GGA (fix data) including altitude
+  GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ); // 1 Hz update rate
+  // Request updates on antenna status, comment out to keep quiet
+  GPS.sendCommand(PGCMD_ANTENNA);
+  delay(1000);
+
+  // Ask for firmware version
+  GPS.println(PMTK_Q_RELEASE);
+  isInitiatedGPS = true;
+}
+
+void readGPS()
+{
+  char c = GPS.read();
+  if (GPSECHO)
+    if (c) Serial.print(c);
+  if (GPS.newNMEAreceived()) {
+    Serial.println(GPS.lastNMEA()); // this also sets the newNMEAreceived() flag to false
+    if (!GPS.parse(GPS.lastNMEA())) // this also sets the newNMEAreceived() flag to false
+      return; // we can fail to parse a sentence in which case we should just wait for another
+  }
+  // approximately every 2 seconds or so, print out the current stats
+  if (millis() - timer > 2000) {
+    timer = millis(); // reset the timer
+    if (GPS.fix) {
+      gpsLat = GPS.latitude; gpsLatNS = GPS.lat;
+      gpsLon = GPS.longitude; gpsLonEW = GPS.lon;
+      gpsAlt = GPS.altitude;
+      gotLocation = true;
+
+      /*
+      // print location
+      Serial.print("Location: ");
+      Serial.print(gpsLat, 4); Serial.print(gpsLatNS);
+      Serial.print(", ");
+      Serial.print(gpsLon, 4); Serial.println(gpsLonEW);
+      Serial.print("Altitude: "); Serial.println(gpsAlt);
+      */
+    }
+  }
+}
+
 //Methode die de hallsensor uitleest
 void readHallSensor(){
   uint16_t hallDrempelL = 1000;
@@ -76,8 +141,15 @@ void readHallSensor(){
   //Threshold logica
   if (hallData <= hallDrempelL || hallData >=hallDrempelH)
     Serial.println("Deur open!!");
+    if (!isInitiatedGPS){
+      digitalWrite(GpsEnable,HIGH);
+      initGPS();
+    }
+    while (!gotLocation){
+      readGPS();
+    }
+    //stuur gpsLat, gpsLatNS, gpsLon, gpsLonEW, gpsAlt door via LoRa
 }
-
 
 //Main setup
 void setup()
