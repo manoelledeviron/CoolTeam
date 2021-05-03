@@ -20,7 +20,6 @@ HDC2010 sensor(ADDR);
 float temperature = 0, humidity = 0;
 
 //Init GPS data variabelen
-bool doorOpen = false;
 bool isInitiatedGPS = false;
 Adafruit_GPS GPS(&Wire);
 uint32_t timer = millis();
@@ -174,6 +173,12 @@ void setup()
     wakeUpRoutine();
 
   //readHallSensor();
+  
+  //zet GPS uit
+  digitalWrite(GpsEnable,LOW);
+  isInitiatedGPS = false;
+  gotLocation = false;
+
 
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_25, 1);   //Selecteer wake-up pin
   //Serial.println("Going to sleep now");
