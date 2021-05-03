@@ -105,7 +105,7 @@ void readGPS()
       return; // we can fail to parse a sentence in which case we should just wait for another
   }
   // approximately every 2 seconds or so, print out the current stats
-  if (millis() - timer > 2000) {
+  if (millis() - timer > 1000) {
     timer = millis(); // reset the timer
     if (GPS.fix) {
       gpsLat = GPS.latitude; gpsLatNS = GPS.lat;
@@ -113,14 +113,15 @@ void readGPS()
       gpsAlt = GPS.altitude;
       gotLocation = true;
 
-      /*
-      // print location
-      Serial.print("Location: ");
-      Serial.print(gpsLat, 4); Serial.print(gpsLatNS);
-      Serial.print(", ");
-      Serial.print(gpsLon, 4); Serial.println(gpsLonEW);
-      Serial.print("Altitude: "); Serial.println(gpsAlt);
-      */
+    // printen voor de debug
+     if (GPSECHO)
+     {
+        Serial.print("Location: ");
+        Serial.print(gpsLat, 4); Serial.print(gpsLatNS);
+        Serial.print(", ");
+        Serial.print(gpsLon, 4); Serial.println(gpsLonEW);
+        Serial.print("Altitude: "); Serial.println(gpsAlt);
+     }
     }
   }
 }
@@ -145,8 +146,15 @@ void readHallSensor(){
       digitalWrite(GpsEnable,HIGH);
       initGPS();
     }
-    while (!gotLocation){
+    int waiting = 0;
+    while (!gotLocation && waiting < 300){ //het stopt met proberen na 5 minuten, stuurt alleen om de 2 seconden
       readGPS();
+      waiting ++;
+    }
+    if (waiting == 150){
+      //stuur GPSERROR via LoRa
+      if (GPSECHO)
+        Serial.println("GPS Error");
     }
     //stuur gpsLat, gpsLatNS, gpsLon, gpsLonEW, gpsAlt door via LoRa
 }
