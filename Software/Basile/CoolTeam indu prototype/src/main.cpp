@@ -108,9 +108,9 @@ void readGPS()
   if (millis() - timer > 1000) {
     timer = millis(); // reset the timer
     if (GPS.fix) {
-      gpsLat = GPS.latitude; gpsLatNS = GPS.lat;
-      gpsLon = GPS.longitude; gpsLonEW = GPS.lon;
-      gpsAlt = GPS.altitude;
+      gpsLat = GPS.latitude; gpsLatNS = GPS.lat; // latitude: llll.ll, N/S: a
+      gpsLon = GPS.longitude; gpsLonEW = GPS.lon; // longitude: yyyyy.yy, E/W: a
+      gpsAlt = GPS.altitude; // x.x (?)
       gotLocation = true;
 
     // printen voor de debug
