@@ -175,7 +175,7 @@ void initGPS()
   GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ); // 1 Hz update rate
   // Request updates on antenna status, comment out to keep quiet
   GPS.sendCommand(PGCMD_ANTENNA);
-  sleep_time(1000);;
+  sleep_time(1000);
 
   // Ask for firmware version
   GPS.println(PMTK_Q_RELEASE);
@@ -187,12 +187,13 @@ void readGPS()
   char c = GPS.read();
   //if (GPSECHO)
     //if (c) Serial.print(c);
-  if (GPS.newNMEAreceived()) {
+  if (GPS.newNMEAreceived()) { //nieuwe NMEA command gekregen
     //Serial.println(GPS.lastNMEA()); // this also sets the newNMEAreceived() flag to false
+	//parse gekregen command
     if (!GPS.parse(GPS.lastNMEA())) // this also sets the newNMEAreceived() flag to false
       return; // we can fail to parse a sentence in which case we should just wait for another
   }
-  // approximately every 2 seconds or so, print out the current stats
+  // approximately every 1 seconds or so, print out the current stats
   if (millis() - timer > 1000) {
     Serial.println("IN TIMER");
     timer = millis(); // reset the timer
@@ -200,18 +201,18 @@ void readGPS()
       Serial.println("in de gps fix if");
       gpsLat = GPS.latitude; gpsLatNS = GPS.lat; // latitude: llll.ll, N/S: a
       gpsLon = GPS.longitude; gpsLonEW = GPS.lon; // longitude: yyyyy.yy, E/W: a
-      gpsAlt = GPS.altitude; // x.x (?)
+      gpsAlt = GPS.altitude; // x.x
       gotLocation = true;
     }
   }
   // printen voor de debug
-     if (GPSECHO)
-     {
-        Serial.println("Location: ");
-        Serial.print("Latitude");Serial.println(gpsLat, 4);  
-        Serial.print("Longitude");Serial.print(gpsLon, 4);
-        Serial.print("Altitude: "); Serial.println(gpsAlt);
-     }
+  if (GPSECHO)
+  {
+	Serial.println("Location: ");
+	Serial.print("Latitude");Serial.println(gpsLat);  
+	Serial.print("Longitude");Serial.print(gpsLon);
+	Serial.print("Altitude: "); Serial.println(gpsAlt);
+  }
 }
 
 //Methode die de hallsensor uitleest
@@ -239,15 +240,23 @@ void readHallSensor(){
     }
     int waiting = 0;
     while (!gotLocation && waiting < 300){ //het stopt met proberen na 5 minuten, stuurt alleen om de seconde
-      readGPS();
+      readGPS(); //delay van 1 seconde inbegrepen
       waiting ++;
     }
-    if (waiting == 300){
+    if (waiting >= 300){
       //stuur GPSERROR via LoRa
+	  transmit_location(0.0, 0.0, 0.0);
       if (GPSECHO)
         Serial.println("GPS Error");
+	  return;
+		
     }
-  }  //stuur gpsLat, gpsLatNS, gpsLon, gpsLonEW, gpsAlt door via LoRa
+	if (gotLocation)
+	{
+		transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt)
+	}
+	return;
+  }
 }
 
 //Main setup
