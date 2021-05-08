@@ -238,11 +238,11 @@ void readHallSensor(){
       initGPS();
     }
     int waiting = 0;
-    while (!gotLocation && waiting < 300){ //het stopt met proberen na 5 minuten, stuurt alleen om de 2 seconden
+    while (!gotLocation && waiting < 300){ //het stopt met proberen na 5 minuten, stuurt alleen om de seconde
       readGPS();
       waiting ++;
     }
-    if (waiting == 150){
+    if (waiting == 300){
       //stuur GPSERROR via LoRa
       if (GPSECHO)
         Serial.println("GPS Error");
