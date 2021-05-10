@@ -253,7 +253,7 @@ void readHallSensor(){
     }
 	if (gotLocation)
 	{
-		transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt)
+		transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt);
 	}
 	return;
   }
