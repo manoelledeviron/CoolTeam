@@ -41,7 +41,7 @@ RTC_DATA_ATTR int bootCount = 0;
 rn2xx3 myLora(Serial2);
 #define LoRaEnable GPIO_NUM_19
 #define LoRaReset GPIO_NUM_18
-#define MINUTES_SEND 10
+#define MINUTES_SEND 1
 RTC_DATA_ATTR int temptimer = 0;
 
 
@@ -114,9 +114,11 @@ void transmit_location(double latitude, double longitude, double altitude)
     d_lon = d_lon & 16777215;
   if(altitude < 0)
     d_alt = d_alt & 16777215;
-  char d_send[22] = {0};
+  char d_send[30] = {0};
   sprintf(d_send,"%02X%02X%06lX%06lX%06lX",d_channel,d_type,d_lat,d_lon,d_alt);
+  Serial.println(d_send);
   myLora.txCommand("mac tx uncnf 1 ", d_send, false);
+  Serial.println("einde lora");
 }
 
 //Testfunctie die alle registers van de temp sensor print
@@ -185,8 +187,8 @@ void initGPS()
 void readGPS()
 {
   char c = GPS.read();
-  //if (GPSECHO)
-    //if (c) Serial.print(c);
+  if (GPSECHO);
+    //if (c) Serial.println(c);
   if (GPS.newNMEAreceived()) { //nieuwe NMEA command gekregen
     //Serial.println(GPS.lastNMEA()); // this also sets the newNMEAreceived() flag to false
 	//parse gekregen command
@@ -194,24 +196,23 @@ void readGPS()
       return; // we can fail to parse a sentence in which case we should just wait for another
   }
   // approximately every 1 seconds or so, print out the current stats
-  if (millis() - timer > 1000) {
-    Serial.println("IN TIMER");
-    timer = millis(); // reset the timer
-    if (GPS.fix) {
-      Serial.println("in de gps fix if");
-      gpsLat = GPS.latitude; gpsLatNS = GPS.lat; // latitude: llll.ll, N/S: a
-      gpsLon = GPS.longitude; gpsLonEW = GPS.lon; // longitude: yyyyy.yy, E/W: a
-      gpsAlt = GPS.altitude; // x.x
-      gotLocation = true;
+  sleep_time(1000);
+  Serial.println("IN TIMER");
+  //timer = millis(); // reset the timer
+  if (GPS.fix) {
+    Serial.println("in de gps fix if");
+    gpsLat = GPS.latitude; gpsLatNS = GPS.lat; // latitude: llll.ll, N/S: a
+    gpsLon = GPS.longitude; gpsLonEW = GPS.lon; // longitude: yyyyy.yy, E/W: a
+    gpsAlt = GPS.altitude; // x.x
+    gotLocation = true;
+    // printen voor de debug
+    if (GPSECHO)
+    {
+	    Serial.println("Location: ");
+	    Serial.print("Latitude");Serial.println(gpsLat);  
+	    Serial.print("Longitude");Serial.println(gpsLon);
+	    Serial.print("Altitude: "); Serial.println(gpsAlt);
     }
-  }
-  // printen voor de debug
-  if (GPSECHO)
-  {
-	Serial.println("Location: ");
-	Serial.print("Latitude");Serial.println(gpsLat);  
-	Serial.print("Longitude");Serial.print(gpsLon);
-	Serial.print("Altitude: "); Serial.println(gpsAlt);
   }
 }
 
@@ -239,23 +240,24 @@ void readHallSensor(){
       initGPS();
     }
     int waiting = 0;
-    while (!gotLocation && waiting < 300){ //het stopt met proberen na 5 minuten, stuurt alleen om de seconde
+    sleep_time(10000); // wacht op fix
+    while (!gotLocation && waiting < 60){ //het stopt met proberen na 5 minuten, stuurt alleen om de seconde
       readGPS(); //delay van 1 seconde inbegrepen
       waiting ++;
+      Serial.println(waiting);
     }
-    if (waiting >= 300){
+    init_rn2483();
+    if (waiting >= 60){
       //stuur GPSERROR via LoRa
-	  transmit_location(0.0, 0.0, 0.0);
+	    transmit_location(0.0,0.0,0.0);
       if (GPSECHO)
         Serial.println("GPS Error");
-	  return;
-		
     }
-	if (gotLocation)
-	{
-		transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt);
-	}
-	return;
+	  if (gotLocation)
+	  {
+		  transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt);
+	  }
+    lora_poweroff();
   }
 }
 
