@@ -186,6 +186,8 @@ void initGPS()
 
 void readGPS()
 {
+  sleep_time(1000);
+  //Serial.println("IN TIMER");
   char c = GPS.read();
   if (GPSECHO);
     //if (c) Serial.println(c);
@@ -196,11 +198,12 @@ void readGPS()
       return; // we can fail to parse a sentence in which case we should just wait for another
   }
   // approximately every 1 seconds or so, print out the current stats
-  sleep_time(1000);
-  Serial.println("IN TIMER");
+
   //timer = millis(); // reset the timer
+  Serial.println(GPS.fix);
   if (GPS.fix) {
-    Serial.println("in de gps fix if");
+    
+    //Serial.println("in de gps fix if");
     gpsLat = GPS.latitude; gpsLatNS = GPS.lat; // latitude: llll.ll, N/S: a
     gpsLon = GPS.longitude; gpsLonEW = GPS.lon; // longitude: yyyyy.yy, E/W: a
     gpsAlt = GPS.altitude; // x.x
@@ -228,7 +231,7 @@ void readHallSensor(){
   gpio_deep_sleep_hold_en();              // Enable de hold functie tijdens deepsleep
   gpio_hold_en(hallDisablePin);           // Enable de hold functie voor bepaalde pin -> voorkomt dat pin laag komt als de esp slaapt!!
 
-  //Serial.println(hallData);
+  Serial.println(hallData);
 
   //Threshold logica
   //DEUR STAAT "OPEN" ALS MAGNEET NAAST DE SENSOR is
