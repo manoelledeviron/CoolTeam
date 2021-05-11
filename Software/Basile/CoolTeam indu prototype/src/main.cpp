@@ -240,7 +240,7 @@ void readHallSensor(){
     }
     int waiting = 0;
     sleep_time(10000); // wacht op fix
-    while (!gotLocation && waiting < 60){ //het stopt met proberen na 5 minuten, stuurt alleen om de seconde
+    while (!gotLocation && waiting < 60){ //het stopt met proberen na 1 minute, stuurt alleen om de seconde
       readGPS(); //delay van 1 seconde inbegrepen
       waiting ++;
       Serial.println(waiting);
@@ -257,6 +257,10 @@ void readHallSensor(){
 		  transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt);
 	  }
     lora_poweroff();
+    //zet GPS uit
+    digitalWrite(GpsEnable,LOW);
+    isInitiatedGPS = false;
+    gotLocation = false;
   }
 }
 
@@ -278,10 +282,7 @@ void setup()
 
   readHallSensor();
   
-  //zet GPS uit
-  digitalWrite(GpsEnable,LOW);
-  isInitiatedGPS = false;
-  gotLocation = false;
+  
 
 
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_25, 1);   //Selecteer wake-up pin
