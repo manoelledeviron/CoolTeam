@@ -6,9 +6,8 @@
 #include <driver/uart.h>
 
 
-//I2C Addres van temp sensor en GPS
+//I2C Addres van temp sensor
 #define ADDR 0x40
-#define GPSADDR 0x10
 
 //Pinnen definen van hall sensor
 #define hallDisablePin GPIO_NUM_4
@@ -172,7 +171,7 @@ void wakeUpRoutine()
 
 void initGPS() 
 {
-  GPS.begin(GPSADDR);
+  GPS.begin(GPS_DEFAULT_I2C_ADDR);
   GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA); //GPS mode: RMC (recommended minimum) and GGA (fix data) including altitude
   GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ); // 1 Hz update rate
   // Request updates on antenna status, comment out to keep quiet
@@ -244,7 +243,7 @@ void readHallSensor(){
     }
     int waiting = 0;
     sleep_time(10000); // wacht op fix
-    while (!gotLocation && waiting < 60){ //het stopt met proberen na 5 minuten, stuurt alleen om de seconde
+    while (!gotLocation && waiting < 60){ //het stopt met proberen na 1 minute, stuurt alleen om de seconde
       readGPS(); //delay van 1 seconde inbegrepen
       waiting ++;
       Serial.println(waiting);
@@ -261,6 +260,10 @@ void readHallSensor(){
 		  transmit_location((double) gpsLat, (double) gpsLon, (double) gpsAlt);
 	  }
     lora_poweroff();
+    //zet GPS uit
+    digitalWrite(GpsEnable,LOW);
+    isInitiatedGPS = false;
+    gotLocation = false;
   }
 }
 
@@ -282,10 +285,7 @@ void setup()
 
   readHallSensor();
   
-  //zet GPS uit
-  digitalWrite(GpsEnable,LOW);
-  isInitiatedGPS = false;
-  gotLocation = false;
+  
 
 
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_25, 1);   //Selecteer wake-up pin
