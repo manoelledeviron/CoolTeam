@@ -6,9 +6,8 @@
 #include <driver/uart.h>
 
 
-//I2C Addres van temp sensor en GPS
+//I2C Addres van temp sensor
 #define ADDR 0x40
-#define GPSADDR 0x10
 
 //Pinnen definen van hall sensor
 #define hallDisablePin GPIO_NUM_4
@@ -172,7 +171,7 @@ void wakeUpRoutine()
 
 void initGPS() 
 {
-  GPS.begin(GPSADDR);
+  GPS.begin(GPS_DEFAULT_I2C_ADDR);
   GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA); //GPS mode: RMC (recommended minimum) and GGA (fix data) including altitude
   GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ); // 1 Hz update rate
   // Request updates on antenna status, comment out to keep quiet
